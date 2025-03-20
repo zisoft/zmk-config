@@ -20,7 +20,8 @@
             // | SHFT |  Y  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
-            bindings = < &kp TAB    &kp DE_Q  &kp DE_W  &kp DE_E  &kp DE_R  &kp DE_T    &kp DE_Z     &kp DE_U   &kp DE_I        &kp DE_O    &kp DE_P      &kp BSPC
+            bindings = <
+&kp TAB    &kp DE_Q  &kp DE_W  &kp DE_E  &kp DE_R  &kp DE_T    &kp DE_Z     &kp DE_U   &kp DE_I        &kp DE_O    &kp DE_P      &kp BSPC
 &kp ESC    &kp DE_A  &kp DE_S  &kp DE_D  &kp DE_F  &kp DE_G    &kp DE_H     &kp DE_J   &kp DE_K        &kp DE_L    &kp DE_HASH   &kp DELETE
 &kp LSHFT  &kp DE_Y  &kp DE_X  &kp DE_C  &kp DE_V  &kp DE_B    &kp DE_N     &kp DE_M   &kp DE_COMMA    &kp DE_DOT  &kp DE_MINUS  &kp ESC
                                &mo 3     &mo 1     &mo 2       &lt 2 ENTER  &kp SPACE  &kp LEFT_SHIFT
@@ -35,10 +36,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp DE_EXCL  &kp LS(N2)  &kp LS(N3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)    &kp LS(N6)  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp LS(N0)  &kp LS(FSLH)
-&trans  &trans       &trans      &trans      &trans            &trans              &trans      &kp DE_N4  &kp DE_N5  &kp DE_N6  &trans      &trans
-&trans  &trans       &trans      &trans      &trans            &trans              &kp DE_N0   &kp DE_N1  &kp DE_N2  &kp DE_N3  &trans      &trans
-                                 &trans      &trans            &trans              &trans      &trans     &trans
+&trans            &kp DE_EXCL          &kp LS(N2)  &kp LS(N3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)    &kp LS(N6)  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp LS(N0)  &kp LS(FSLH)
+&trans            &trans               &trans      &trans      &trans            &trans              &trans      &kp DE_N4  &kp DE_N5  &kp DE_N6  &trans      &trans
+&kp DE_LESS_THAN  &kp DE_GREATER_THAN  &trans      &trans      &trans            &trans              &kp DE_N0   &kp DE_N1  &kp DE_N2  &kp DE_N3  &trans      &trans
+                                                   &trans      &trans            &trans              &trans      &trans     &trans
             >;
         };
 

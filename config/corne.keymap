@@ -36,10 +36,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp DE_EXCLAMATION  &kp DE_DOUBLE_QUOTES  &kp DE_HASH  &kp DE_DOLLAR  &kp DE_PERCENT    &kp DE_AMPERSAND  &kp DE_SLASH  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_EQUAL  &kp DE_QUESTION
-&trans  &kp N1              &kp N2                &kp N3       &kp N4         &kp N5            &kp N6            &kp N7        &kp N8                   &kp N9                    &kp N0        &trans
-&trans  &trans              &trans                &trans       &trans         &trans            &trans            &trans        &trans                   &trans                    &trans        &trans
-                                                  &trans       &trans         &trans            &trans            &trans        &trans
+&trans  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)    &kp LS(N6)  &kp LS(DE_N7)  &kp LS(DE_N8)  &kp LS(DE_N9)  &kp LS(N0)  &kp LS(FSLH)
+&trans  &kp N1      &kp N2      &kp N3      &kp N4            &kp N5              &kp N6      &kp N7         &kp N8         &kp N9         &kp N0      &trans
+&trans  &trans      &trans      &trans      &trans            &trans              &trans      &trans         &trans         &trans         &trans      &trans
+                                &trans      &trans            &trans              &trans      &trans         &trans
             >;
         };
 

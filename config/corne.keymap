@@ -36,10 +36,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans            &kp DE_EXCL          &kp LS(N2)  &kp LS(N3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)    &kp LS(N6)  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp LS(N0)  &kp LS(FSLH)
-&trans            &trans               &trans      &trans      &trans            &trans              &trans      &kp DE_N4  &kp DE_N5  &kp DE_N6  &trans      &trans
-&kp DE_LESS_THAN  &kp DE_GREATER_THAN  &trans      &trans      &trans            &trans              &kp DE_N0   &kp DE_N1  &kp DE_N2  &kp DE_N3  &trans      &trans
-                                                   &trans      &trans            &trans              &trans      &trans     &trans
+&trans            &kp DE_EXCL          &kp DE_AT  &kp LS(N3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)    &kp LS(N6)  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp LS(N0)  &kp LS(FSLH)
+&trans            &trans               &trans     &trans      &trans            &trans              &trans      &kp DE_N4  &kp DE_N5  &kp DE_N6  &trans      &trans
+&kp DE_LESS_THAN  &kp DE_GREATER_THAN  &trans     &trans      &trans            &trans              &kp DE_N0   &kp DE_N1  &kp DE_N2  &kp DE_N3  &trans      &trans
+                                                  &trans      &trans            &trans              &trans      &trans     &trans
             >;
         };
 

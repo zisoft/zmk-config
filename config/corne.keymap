@@ -58,10 +58,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans     &kp LS(N1)  &kp LS(N2)     &kp RA(L)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)    &kp LS(N6)  &kp LS(RBKT)  &kp LS(N7)  &kp LS(MINUS)  &kp LA(LS(N6))  &trans
-&trans     &kp N1      &kp N2         &kp N3     &kp NUMBER_4      &kp NUMBER_5        &kp N6      &kp N7        &kp DE_N8   &kp N9         &kp N0          &trans
-&kp GRAVE  &kp RA(N7)  &kp LS(GRAVE)  &kp LA(N)  &trans            &trans              &trans      &trans        &trans      &trans         &trans          &trans
-                                      &trans     &trans            &trans              &trans      &trans        &trans
+&trans     &kp LS(N1)  &kp LS(N2)     &kp RA(L)  &kp LS(NUMBER_4)   &kp LS(NUMBER_5)    &kp LS(N6)      &kp LS(RBKT)       &kp LS(N7)  &kp LS(MINUS)  &kp LA(LS(N6))  &trans
+&trans     &kp N1      &kp N2         &kp N3     &kp NUMBER_4       &kp NUMBER_5        &kp N6          &kp N7             &kp DE_N8   &kp N9         &kp N0          &trans
+&kp GRAVE  &kp RA(N7)  &kp LS(GRAVE)  &kp LA(N)  &kp RA(BACKSLASH)  &kp LS(EQUAL)       &kp LS(RA(N7))  &kp RIGHT_BRACKET  &trans      &trans         &trans          &trans
+                                      &trans     &trans             &trans              &trans          &trans             &trans
             >;
         };
 
@@ -73,10 +73,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans     &trans         &kp RA(E)  &trans  &trans    &trans             &kp LEFT_BRACKET  &trans      &kp SEMI    &trans            &trans
-&trans  &kp APOS   &kp MINUS      &trans     &trans  &trans    &kp RA(N5)         &kp RA(NUMBER_6)  &kp LS(N8)  &kp LS(N9)  &kp DE_BACKSLASH  &kp DE_GRAVE
-&trans  &kp GRAVE  &kp LS(GRAVE)  &trans     &trans  &trans    &kp DE_UNDERSCORE  &kp DE_PLUS       &kp RA(N8)  &kp RA(N9)  &kp DE_PIPE       &kp DE_TILDE
-                                  &trans     &trans  &trans    &trans             &trans            &trans
+&trans  &trans     &trans         &kp RA(E)  &trans  &trans    &trans      &kp LEFT_BRACKET  &trans      &kp SEMI    &trans  &trans
+&trans  &kp APOS   &kp MINUS      &trans     &trans  &trans    &kp RA(N5)  &kp RA(NUMBER_6)  &kp LS(N8)  &kp LS(N9)  &trans  &trans
+&trans  &kp GRAVE  &kp LS(GRAVE)  &trans     &trans  &trans    &trans      &trans            &kp RA(N8)  &kp RA(N9)  &trans  &kp DE_TILDE
+                                  &trans     &trans  &trans    &trans      &trans            &trans
             >;
         };
 
@@ -100,19 +100,19 @@
 
         lower_layer_windows {
             bindings = <
-&trans    &kp LS(N1)    &kp LS(N2)    &kp RA(Q)              &kp LS(NUMBER_4)  &kp LS(NUMBER_5)    &kp LS(N6)  &kp LS(RBKT)  &kp LS(N7)  &kp LS(MINUS)  &kp GRAVE  &trans
-&trans    &kp N1        &kp N2        &kp N3                 &kp NUMBER_4      &kp NUMBER_5        &kp N6      &kp N7        &kp DE_N8   &kp N9         &kp N0     &trans
-&kp NUBS  &kp RA(NUBS)  &kp LS(NUBS)  &kp LA(RIGHT_BRACKET)  &trans            &trans              &trans      &trans        &trans      &trans         &trans     &trans
-                                      &trans                 &trans            &trans              &trans      &trans        &trans
+&trans    &kp LS(N1)    &kp LS(N2)    &kp RA(Q)              &kp LS(NUMBER_4)   &kp LS(NUMBER_5)    &kp LS(N6)      &kp LS(RBKT)       &kp LS(N7)  &kp LS(MINUS)  &kp GRAVE  &trans
+&trans    &kp N1        &kp N2        &kp N3                 &kp NUMBER_4       &kp NUMBER_5        &kp N6          &kp N7             &kp DE_N8   &kp N9         &kp N0     &trans
+&kp NUBS  &kp RA(NUBS)  &kp LS(NUBS)  &kp RA(RIGHT_BRACKET)  &kp RA(BACKSLASH)  &kp LS(EQUAL)       &kp LS(RA(N7))  &kp RIGHT_BRACKET  &trans      &trans         &trans     &trans
+                                      &trans                 &trans             &trans              &trans          &trans             &trans
             >;
         };
 
         raise_layer_windows {
             bindings = <
-&trans  &trans     &trans         &kp RA(E)  &trans  &trans    &trans             &kp LEFT_BRACKET  &trans      &kp SEMI          &trans            &trans
-&trans  &kp APOS   &kp MINUS      &trans     &trans  &trans    &kp RA(N8)         &kp RA(N9)        &kp LS(N8)  &kp LS(N9)        &kp DE_BACKSLASH  &kp DE_GRAVE
-&trans  &kp GRAVE  &kp LS(GRAVE)  &trans     &trans  &trans    &kp DE_UNDERSCORE  &kp DE_PLUS       &kp RA(N7)  &kp RA(NUMBER_0)  &kp DE_PIPE       &kp DE_TILDE
-                                  &trans     &trans  &trans    &trans             &trans            &trans
+&trans  &trans     &trans         &kp RA(E)  &trans  &trans    &trans      &kp LEFT_BRACKET  &trans      &kp SEMI          &trans  &trans
+&trans  &kp APOS   &kp MINUS      &trans     &trans  &trans    &kp RA(N8)  &kp RA(N9)        &kp LS(N8)  &kp LS(N9)        &trans  &trans
+&trans  &kp GRAVE  &kp LS(GRAVE)  &trans     &trans  &trans    &trans      &trans            &kp RA(N7)  &kp RA(NUMBER_0)  &trans  &trans
+                                  &trans     &trans  &trans    &trans      &trans            &trans
             >;
         };
 

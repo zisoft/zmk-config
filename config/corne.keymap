@@ -36,9 +36,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans     &kp LS(N1)  &kp LS(N2)     &kp RA(L)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)    &kp LS(N6)  &kp LS(RBKT)  &kp LS(N7)  &trans  &trans  &trans
-&trans     &kp N1      &kp N2         &kp N3     &kp NUMBER_4      &kp NUMBER_5        &kp N6      &kp N7        &kp DE_N8   &kp N9  &kp N0  &trans
-&kp GRAVE  &kp RA(N7)  &kp LS(GRAVE)  &trans     &trans            &trans              &trans      &trans        &trans      &trans  &trans  &trans
+&trans     &kp LS(N1)  &kp LS(N2)     &kp RA(L)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)    &kp LS(N6)  &kp LS(RBKT)  &kp LS(N7)  &kp LS(MINUS)  &trans  &trans
+&trans     &kp N1      &kp N2         &kp N3     &kp NUMBER_4      &kp NUMBER_5        &kp N6      &kp N7        &kp DE_N8   &kp N9         &kp N0  &trans
+&kp GRAVE  &kp RA(N7)  &kp LS(GRAVE)  &trans     &trans            &trans              &trans      &trans        &trans      &trans         &trans  &trans
                                       &trans     &trans            &trans              &trans      &trans        &trans
             >;
         };

@@ -60,7 +60,7 @@
             bindings = <
 &trans     &kp LS(N1)  &kp LS(N2)     &kp RA(L)  &kp LS(NUMBER_4)   &kp LS(NUMBER_5)    &kp LS(N6)      &kp LS(RBKT)       &kp LS(N7)  &kp LS(MINUS)  &kp LA(LS(N6))  &trans
 &trans     &kp N1      &kp N2         &kp N3     &kp NUMBER_4       &kp NUMBER_5        &kp N6          &kp N7             &kp DE_N8   &kp N9         &kp N0          &trans
-&kp GRAVE  &kp RA(N7)  &kp LS(GRAVE)  &kp LA(N)  &kp LS(BACKSLASH)  &kp LS(EQUAL)       &kp RA(LS(N7))  &kp RIGHT_BRACKET  &trans      &trans         &trans          &trans
+&kp GRAVE  &kp RA(N7)  &kp LS(GRAVE)  &kp LA(N)  &kp LS(BACKSLASH)  &kp LS(EQUAL)       &kp RA(LS(N7))  &kp RIGHT_BRACKET  &kp LS(N0)  &trans         &trans          &trans
                                       &trans     &trans             &trans              &trans          &trans             &trans
             >;
         };
@@ -102,7 +102,7 @@
             bindings = <
 &trans    &kp LS(N1)    &kp LS(N2)    &kp RA(Q)              &kp LS(NUMBER_4)   &kp LS(NUMBER_5)    &kp LS(N6)     &kp LS(RBKT)       &kp LS(N7)  &kp LS(MINUS)  &kp GRAVE  &trans
 &trans    &kp N1        &kp N2        &kp N3                 &kp NUMBER_4       &kp NUMBER_5        &kp N6         &kp N7             &kp DE_N8   &kp N9         &kp N0     &trans
-&kp NUBS  &kp RA(NUBS)  &kp LS(NUBS)  &kp RA(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &kp LS(EQUAL)       &kp RA(MINUS)  &kp RIGHT_BRACKET  &trans      &trans         &trans     &trans
+&kp NUBS  &kp RA(NUBS)  &kp LS(NUBS)  &kp RA(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &kp LS(EQUAL)       &kp RA(MINUS)  &kp RIGHT_BRACKET  &kp LS(N0)  &trans         &trans     &trans
                                       &trans                 &trans             &trans              &trans         &trans             &trans
             >;
         };

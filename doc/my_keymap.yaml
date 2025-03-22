@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - BSPC
-  - {t: ESC, h: LCTRL}
+  - ESC
   - {t: A, h: RIGHT ALT}
   - {t: S, h: LEFT META}
   - {t: D, h: LEFT SHIFT}

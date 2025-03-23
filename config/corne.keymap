@@ -65,10 +65,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans      &kp LS(N1)  &kp LS(N2)  &kp RA(L)  &kp LS(NUMBER_4)   &kp LS(NUMBER_5)    &kp LS(N6)      &kp LS(RBKT)       &kp LS(N7)  &kp LS(MINUS)  &kp LA(LS(N6))  &trans
-&trans      &kp N1      &kp N2      &kp N3     &kp NUMBER_4       &kp NUMBER_5        &kp N6          &kp N7             &kp N8      &kp N9         &kp N0          &trans
-&kp LS(N3)  &trans      &trans      &kp LA(N)  &kp LS(BACKSLASH)  &kp EQUAL           &kp RA(LS(N7))  &kp RIGHT_BRACKET  &kp LS(N0)  &kp GRAVE      &kp RA(N7)      &trans
-                                    &trans     &trans             &trans              &trans          &trans             &trans
+&trans      &kp LS(N1)         &kp LS(N2)         &kp RA(L)           &kp LS(NUMBER_4)   &kp LS(NUMBER_5)    &kp LS(N6)      &kp LS(RBKT)       &kp LS(N7)           &kp LS(MINUS)       &kp LA(LS(N6))     &trans
+&trans      &hml RIGHT_ALT N1  &hml LEFT_META N2  &hml LEFT_SHIFT N3  &hml LCTRL N4      &kp NUMBER_5        &kp N6          &hmr RCTRL N7      &hmr RIGHT_SHIFT N8  &hmr RIGHT_META N9  &hmr RIGHT_ALT N0  &trans
+&kp LS(N3)  &trans             &trans             &kp LA(N)           &kp LS(BACKSLASH)  &kp EQUAL           &kp RA(LS(N7))  &kp RIGHT_BRACKET  &kp LS(N0)           &kp GRAVE           &kp RA(N7)         &trans
+                                                  &trans              &trans             &trans              &trans          &trans             &trans
             >;
         };
 
@@ -89,10 +89,10 @@
 
         nav_fn {
             bindings = <
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &kp F7    &kp F8    &kp F9  &kp F10    &kp F11  &kp F12
-&trans      &trans        &trans        &trans        &trans        &trans          &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans   &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &to 0     &to 4     &trans  &trans     &trans   &trans
-                                        &trans        &trans        &trans          &trans    &trans    &trans
+&kp F1      &kp F2         &kp F3         &kp F4          &kp F5        &kp F6          &kp F7          &kp F8                  &kp F9                     &kp F10                &kp F11        &kp F12
+&trans      &kp RIGHT_ALT  &kp LEFT_META  &kp LEFT_SHIFT  &kp LCTRL     &trans          &kp LEFT_ARROW  &hml LEFT_CONTROL DOWN  &hmr RIGHT_SHIFT UP_ARROW  &hmr RIGHT_META RIGHT  &kp RIGHT_ALT  &trans
+&bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4    &to 0           &to 4                   &trans                     &trans                 &trans         &trans
+                                          &trans          &trans        &trans          &trans          &trans                  &trans
             >;
         };
 
@@ -107,28 +107,28 @@
 
         lower_layer_win {
             bindings = <
-&trans      &kp LS(N1)  &kp LS(N2)  &kp RA(Q)              &kp LS(NUMBER_4)   &kp LS(NUMBER_5)    &kp LS(N6)     &kp LS(RBKT)       &kp LS(N7)  &kp LS(MINUS)  &kp GRAVE     &trans
-&trans      &kp N1      &kp N2      &kp N3                 &kp NUMBER_4       &kp NUMBER_5        &kp N6         &kp N7             &kp N8      &kp N9         &kp N0        &trans
-&kp LS(N3)  &trans      &trans      &kp RA(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &kp EQUAL           &kp RA(MINUS)  &kp RIGHT_BRACKET  &kp LS(N0)  &kp NUBS       &kp RA(NUBS)  &trans
-                                    &trans                 &trans             &trans              &trans         &trans             &trans
+&trans      &kp LS(N1)         &kp LS(N2)        &kp RA(Q)              &kp LS(NUMBER_4)   &kp LS(NUMBER_5)    &kp LS(N6)     &kp LS(RBKT)       &kp LS(N7)           &kp LS(MINUS)     &kp GRAVE          &trans
+&trans      &hml RIGHT_ALT N1  &hml LEFT_ALT N2  &hml LEFT_SHIFT N3     &hml LCTRL N4      &kp NUMBER_5        &kp N6         &hmr RCTRL N7      &hmr RIGHT_SHIFT N8  &hmr LEFT_ALT N9  &hmr RIGHT_ALT N0  &trans
+&kp LS(N3)  &trans             &trans            &kp RA(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &kp EQUAL           &kp RA(MINUS)  &kp RIGHT_BRACKET  &kp LS(N0)           &kp NUBS          &kp RA(NUBS)       &trans
+                                                 &trans                 &trans             &trans              &trans         &trans             &trans
             >;
         };
 
         raise_layer_win {
             bindings = <
-&trans  &trans     &trans         &kp RA(E)  &trans  &trans    &trans      &kp LEFT_BRACKET  &trans      &kp SEMI          &trans  &trans
-&trans  &kp APOS   &kp MINUS      &trans     &trans  &trans    &kp RA(N8)  &kp RA(N9)        &kp LS(N8)  &kp LS(N9)        &trans  &trans
-&trans  &kp GRAVE  &kp LS(GRAVE)  &trans     &trans  &trans    &trans      &trans            &kp RA(N7)  &kp RA(NUMBER_0)  &trans  &trans
-                                  &trans     &trans  &trans    &trans      &trans            &trans
+&trans  &trans               &trans               &kp RA(E)       &trans     &trans    &trans      &kp LEFT_BRACKET   &trans                   &kp SEMI              &trans         &trans
+&trans  &hml RIGHT_ALT APOS  &hml LEFT_ALT MINUS  &kp LEFT_SHIFT  &kp LCTRL  &trans    &kp RA(N8)  &hmr LCTRL RA(N9)  &hmr RIGHT_SHIFT LS(N8)  &hmr LEFT_ALT LS(N9)  &kp RIGHT_ALT  &trans
+&trans  &kp GRAVE            &kp LS(GRAVE)        &trans          &trans     &trans    &trans      &trans             &kp RA(N7)               &kp RA(NUMBER_0)      &trans         &trans
+                                                  &trans          &trans     &trans    &trans      &trans             &trans
             >;
         };
 
         nav_fn_win {
             bindings = <
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &kp F7    &kp F8    &kp F9  &kp F10    &kp F11  &kp F12
-&trans      &trans        &trans        &trans        &trans        &trans          &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans   &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &to 0     &to 4     &trans  &trans     &trans   &trans
-                                        &trans        &trans        &trans          &trans    &trans    &trans
+&kp F1      &kp F2         &kp F3        &kp F4          &kp F5        &kp F6          &kp F7    &kp F8           &kp F9                     &kp F10              &kp F11        &kp F12
+&trans      &kp RIGHT_ALT  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL     &trans          &kp LEFT  &hmr RCTRL DOWN  &hmr RIGHT_SHIFT UP_ARROW  &hmr LEFT_ALT RIGHT  &kp RIGHT_ALT  &trans
+&bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4    &to 0     &to 4            &trans                     &trans               &trans         &trans
+                                         &trans          &trans        &trans          &trans    &trans           &trans
             >;
         };
     };

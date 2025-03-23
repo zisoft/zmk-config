@@ -25,7 +25,7 @@ layers:
   - {t: L, h: RIGHT META}
   - '#'
   - DELETE
-  - LSHFT
+  - {type: trans, left: Win}
   - Y
   - X
   - C
@@ -37,7 +37,7 @@ layers:
   - .
   - 
   - ESC
-  - nav/fnc
+  - nav/Fn
   - lower
   - raise
   - {t: ENTER, h: raise}
@@ -68,17 +68,17 @@ layers:
   - '9'
   - '0'
   - {t: ▽, type: trans}
-  - '<'
-  - '|'
-  - '>'
+  - '§'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '~'
   - "'"
-  - '`'
+  - {t: '´', s: '`'}
   - '\'
   - '+'
   - '='
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '<', s: '>'}
+  - '|'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -172,4 +172,3 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  

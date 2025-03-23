@@ -1,3 +1,4 @@
+
 layout: {zmk_keyboard: corne}
 layers:
   default:
@@ -129,7 +130,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  nav_func:
+  nav_fn:
   - F1
   - F2
   - F3

@@ -87,7 +87,7 @@
             >;
         };
 
-        nav_func {
+        nav_fn {
             bindings = <
 &kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &kp F7    &kp F8    &kp F9  &kp F10    &kp F11  &kp F12
 &trans      &trans        &trans        &trans        &trans        &trans          &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans   &trans
@@ -96,7 +96,7 @@
             >;
         };
 
-        default_layer_windows {
+        default_layer_win {
             bindings = <
 &kp TAB    &kp Q             &kp W            &kp E              &kp R         &kp T    &kp Y        &kp U         &kp I               &kp O            &kp P                     &kp BSPC
 &kp ESC    &hml RIGHT_ALT A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LCTRL F  &kp G    &kp H        &hmr RCTRL J  &hmr RIGHT_SHIFT K  &hmr LEFT_ALT L  &hmr RIGHT_ALT BACKSLASH  &kp DELETE
@@ -105,7 +105,7 @@
             >;
         };
 
-        lower_layer_windows {
+        lower_layer_win {
             bindings = <
 &trans     &kp LS(N1)  &kp LS(N2)    &kp RA(Q)              &kp LS(NUMBER_4)   &kp LS(NUMBER_5)    &kp LS(N6)     &kp LS(RBKT)       &kp LS(N7)  &kp LS(MINUS)  &kp GRAVE     &trans
 &trans     &kp N1      &kp N2        &kp N3                 &kp NUMBER_4       &kp NUMBER_5        &kp N6         &kp N7             &kp N8      &kp N9         &kp N0        &trans
@@ -114,7 +114,7 @@
             >;
         };
 
-        raise_layer_windows {
+        raise_layer_win {
             bindings = <
 &trans  &trans     &trans         &kp RA(E)  &trans  &trans    &trans      &kp LEFT_BRACKET  &trans      &kp SEMI          &trans  &trans
 &trans  &kp APOS   &kp MINUS      &trans     &trans  &trans    &kp RA(N8)  &kp RA(N9)        &kp LS(N8)  &kp LS(N9)        &trans  &trans
@@ -123,7 +123,7 @@
             >;
         };
 
-        nav_func_windows {
+        nav_fn_win {
             bindings = <
 &kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &kp F7    &kp F8    &kp F9  &kp F10    &kp F11  &kp F12
 &trans      &trans        &trans        &trans        &trans        &trans          &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans   &trans

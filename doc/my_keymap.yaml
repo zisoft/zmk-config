@@ -90,23 +90,23 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - €
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - 'ü'
+  - 'ä'
+  - 'ö'
+  - '['
+  - ']'
   - {t: ▽, type: trans}
-  - ö
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ä
-  - ß
+  - {t: ▽, type: trans}
   - num
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '['
-  - ']'
+  - 'ü'
+  - 'ß'
   - (
   - )
   - {t: ▽, type: trans}
@@ -117,7 +117,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '€'
   - {t: ▽, type: trans}
   - '{'
   - '}'

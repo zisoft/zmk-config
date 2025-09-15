@@ -150,18 +150,18 @@
 
         colemak_dh_mac {
             bindings = <
-&kp TAB  &kp Q             &kp W             &kp F              &kp P         &kp B    &kp J        &kp L         &kp U               &kp Y              &kp LS(PERIOD)    &kp BSPC
+&kp TAB  &kp Q             &kp W             &kp F              &kp P         &kp B    &kp J        &kp L         &kp U               &kp Z              &kp LS(PERIOD)    &kp BSPC
 &kp ESC  &hml RIGHT_ALT A  &hml LEFT_META R  &hml LEFT_SHIFT S  &hml LCTRL T  &kp G    &kp M        &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr RIGHT_META I  &hmr RIGHT_ALT O  &kp DELETE
-&trans   &kp Z             &kp X             &kp C              &kp D         &kp V    &kp K        &kp H         &kp COMMA           &kp DOT            &kp SLASH         &kp ESC
+&trans   &kp Y             &kp X             &kp C              &kp D         &kp V    &kp K        &kp H         &kp COMMA           &kp DOT            &kp SLASH         &kp ESC
                                              &mo 3              &mo 1         &mo 2    &lt 2 ENTER  &kp SPACE     &kp LEFT_SHIFT
             >;
         };
 
         colemak_dh_win {
             bindings = <
-&kp TAB       &kp Q             &kp W            &kp F              &kp P         &kp B    &kp J        &kp L         &kp U               &kp Y            &kp LS(PERIOD)    &kp BSPC
+&kp TAB       &kp Q             &kp W            &kp F              &kp P         &kp B    &kp J        &kp L         &kp U               &kp Z            &kp LS(PERIOD)    &kp BSPC
 &kp ESC       &hml RIGHT_ALT A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &hml LCTRL T  &kp G    &kp M        &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr LEFT_ALT I  &hmr RIGHT_ALT O  &kp DELETE
-&kp LEFT_WIN  &kp Z             &kp X            &kp C              &kp D         &kp V    &kp K        &kp H         &kp COMMA           &kp DOT          &kp SLASH         &kp ESC
+&kp LEFT_WIN  &kp Y             &kp X            &kp C              &kp D         &kp V    &kp K        &kp H         &kp COMMA           &kp DOT          &kp SLASH         &kp ESC
                                                  &mo 7              &mo 5         &mo 6    &lt 6 ENTER  &kp SPACE     &kp LEFT_SHIFT
             >;
         };

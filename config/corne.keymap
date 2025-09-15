@@ -69,11 +69,20 @@
 &kp TAB  &kp Q             &kp W             &kp E              &kp R         &kp T    &kp Y        &kp U         &kp I               &kp O              &kp P                     &kp BSPC
 &kp ESC  &hml RIGHT_ALT A  &hml LEFT_META S  &hml LEFT_SHIFT D  &hml LCTRL F  &kp G    &kp H        &hmr RCTRL J  &hmr RIGHT_SHIFT K  &hmr RIGHT_META L  &hmr RIGHT_ALT BACKSLASH  &kp DELETE
 &trans   &kp Z             &kp X             &kp C              &kp V         &kp B    &kp N        &kp M         &kp COMMA           &kp DOT            &kp SLASH                 &kp ESC
-                                             &mo 3              &mo 1         &mo 2    &lt 2 ENTER  &kp SPACE     &kp LEFT_SHIFT
+                                             &mo 4              &mo 2         &mo 3    &lt 3 ENTER  &kp SPACE     &kp LEFT_SHIFT
             >;
         };
 
-        lower_layer { // Layer 1
+        colemak_dh_mac { // Layer 1
+            bindings = <
+&kp TAB  &kp Q             &kp W             &kp F              &kp P         &kp B    &kp J        &kp L         &kp U               &kp Z              &kp LS(PERIOD)    &kp BSPC
+&kp ESC  &hml RIGHT_ALT A  &hml LEFT_META R  &hml LEFT_SHIFT S  &hml LCTRL T  &kp G    &kp M        &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr RIGHT_META I  &hmr RIGHT_ALT O  &kp DELETE
+&trans   &kp Y             &kp X             &kp C              &kp D         &kp V    &kp K        &kp H         &kp COMMA           &kp DOT            &kp SLASH         &kp ESC
+                                             &mo 4              &mo 2         &mo 3    &lt 3 ENTER  &kp SPACE     &kp LEFT_SHIFT
+            >;
+        };
+
+        lower_layer { // Layer 2
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -88,7 +97,7 @@
             >;
         };
 
-        raise_layer { // Layer 2
+        raise_layer { // Layer 3
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -103,16 +112,16 @@
             >;
         };
 
-        nav_fn { // Layer 3
+        nav_fn { // Layer 4
             bindings = <
 &kp F1  &kp F2         &kp F3         &kp F4          &kp F5        &kp F6          &kp F7          &kp F8          &kp F9        &kp F10          &kp F11  &kp F12
-&trans  &kp RIGHT_ALT  &kp LEFT_META  &kp LEFT_SHIFT  &kp LCTRL     &trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans   &to 8
-&trans  &profile_mac   &profile_win   &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4    &to 0           &to 4           &trans        &trans           &trans   &bt BT_CLR
+&trans  &kp RIGHT_ALT  &kp LEFT_META  &kp LEFT_SHIFT  &kp LCTRL     &trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans   &to 1
+&trans  &profile_mac   &profile_win   &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4    &to 0           &to 5           &trans        &trans           &trans   &bt BT_CLR
                                       &trans          &trans        &trans          &trans          &trans          &trans
             >;
         };
 
-        default_layer_win { // Layer 4
+        default_layer_win { // Layer 5
             bindings = <
 &kp TAB       &kp Q             &kp W            &kp E              &kp R         &kp T    &kp Y        &kp U         &kp I               &kp O            &kp P                     &kp BSPC
 &kp ESC       &hml RIGHT_ALT A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LCTRL F  &kp G    &kp H        &hmr RCTRL J  &hmr RIGHT_SHIFT K  &hmr LEFT_ALT L  &hmr RIGHT_ALT BACKSLASH  &kp DELETE
@@ -121,7 +130,7 @@
             >;
         };
 
-        lower_layer_win { // Layer 5
+        lower_layer_win { // Layer 6
             bindings = <
 &trans      &kp LS(N1)         &kp LS(N2)        &kp RA(Q)              &kp LS(NUMBER_4)   &kp LS(NUMBER_5)    &kp LS(N6)     &kp LS(RBKT)       &kp LS(N7)           &kp LS(MINUS)     &kp GRAVE          &trans
 &trans      &hml RIGHT_ALT N1  &hml LEFT_ALT N2  &hml LEFT_SHIFT N3     &hml LCTRL N4      &kp NUMBER_5        &kp N6         &hmr RCTRL N7      &hmr RIGHT_SHIFT N8  &hmr LEFT_ALT N9  &hmr RIGHT_ALT N0  &trans
@@ -130,7 +139,7 @@
             >;
         };
 
-        raise_layer_win { // Layer 6
+        raise_layer_win { // Layer 7
             bindings = <
 &trans  &trans  &kp N7  &kp N8  &kp N9  &trans    &kp APOS          &kp SEMICOLON  &kp RA(N8)  &kp RA(N9)        &trans         &trans
 &trans  &trans  &kp N4  &kp N5  &kp N6  &trans    &kp LEFT_BRACKET  &kp MINUS      &kp RS(N8)  &kp RS(N9)        &kp RIGHT_ALT  &trans
@@ -139,7 +148,7 @@
             >;
         };
 
-        nav_fn_win { // Layer 7
+        nav_fn_win { // Layer 8
             bindings = <
 &kp F1  &kp F2         &kp F3        &kp F4          &kp F5        &kp F6          &kp F7    &kp F8          &kp F9        &kp F10          &kp F11  &kp F12
 &trans  &kp RIGHT_ALT  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL     &trans          &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans   &to 0
@@ -148,18 +157,7 @@
             >;
         };
 
-        colemak_dh_mac { // Layer 8
-            display-name = "Colemak";
-            bindings = <
-&kp TAB  &kp Q             &kp W             &kp F              &kp P         &kp B    &kp J        &kp L         &kp U               &kp Z              &kp LS(PERIOD)    &kp BSPC
-&kp ESC  &hml RIGHT_ALT A  &hml LEFT_META R  &hml LEFT_SHIFT S  &hml LCTRL T  &kp G    &kp M        &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr RIGHT_META I  &hmr RIGHT_ALT O  &kp DELETE
-&trans   &kp Y             &kp X             &kp C              &kp D         &kp V    &kp K        &kp H         &kp COMMA           &kp DOT            &kp SLASH         &kp ESC
-                                             &mo 3              &mo 1         &mo 2    &lt 2 ENTER  &kp SPACE     &kp LEFT_SHIFT
-            >;
-        };
-
         colemak_dh_win { // Layer 9
-            display-name = "Colemak";
             bindings = <
 &kp TAB       &kp Q             &kp W            &kp F              &kp P         &kp B    &kp J        &kp L         &kp U               &kp Z            &kp LS(PERIOD)    &kp BSPC
 &kp ESC       &hml RIGHT_ALT A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &hml LCTRL T  &kp G    &kp M        &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr LEFT_ALT I  &hmr RIGHT_ALT O  &kp DELETE

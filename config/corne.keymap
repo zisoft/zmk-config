@@ -43,7 +43,7 @@
         profile_win: profile_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &to 4>;
+            bindings = <&bt BT_SEL 1 &to 5>;
             label = "PROFILE_WIN";
         };
 

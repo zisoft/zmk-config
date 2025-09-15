@@ -58,12 +58,13 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        default_layer { // Layer 0
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
             // | SHFT |  Y  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+            display-name = "Mac";
 
             bindings = <
 &kp TAB  &kp Q             &kp W             &kp E              &kp R         &kp T    &kp Y        &kp U         &kp I               &kp O              &kp P                     &kp BSPC
@@ -73,12 +74,13 @@
             >;
         };
 
-        lower_layer {
+        lower_layer { // Layer 1
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
             // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
+            display-name = "Mac lower";
 
             bindings = <
 &trans      &kp LS(N1)         &kp LS(N2)         &kp RA(L)           &kp LS(NUMBER_4)   &kp LS(NUMBER_5)    &kp LS(N6)      &kp LS(RBKT)       &kp LS(N7)           &kp LS(MINUS)       &kp LA(LS(N6))     &trans
@@ -88,12 +90,13 @@
             >;
         };
 
-        raise_layer {
+        raise_layer { // Layer 2
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
             // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
+            display-name = "Mac raise";
 
             bindings = <
 &trans  &trans  &kp N7  &kp N8  &kp N9  &trans    &kp APOS          &kp SEMICOLON  &kp RA(N5)  &kp RA(RG(N6))  &trans  &trans
@@ -103,7 +106,8 @@
             >;
         };
 
-        nav_fn {
+        nav_fn { // Layer 3
+            display-name = "Mac nav";
             bindings = <
 &kp F1  &kp F2         &kp F3         &kp F4          &kp F5        &kp F6          &kp F7          &kp F8          &kp F9        &kp F10          &kp F11  &kp F12
 &trans  &kp RIGHT_ALT  &kp LEFT_META  &kp LEFT_SHIFT  &kp LCTRL     &trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans   &to 4
@@ -112,12 +116,13 @@
             >;
         };
 
-        colemak_dh_mac {
+        colemak_dh_mac { // Layer 4
+            display-name = "Mac colemac-DH";
             bindings = <
 &kp TAB  &kp Q             &kp W             &kp E              &kp R         &kp T    &kp Y        &kp U         &kp I               &kp O              &kp P                     &kp BSPC
 &kp ESC  &hml RIGHT_ALT A  &hml LEFT_META S  &hml LEFT_SHIFT D  &hml LCTRL F  &kp G    &kp H        &hmr RCTRL J  &hmr RIGHT_SHIFT K  &hmr RIGHT_META L  &hmr RIGHT_ALT BACKSLASH  &kp DELETE
 &trans   &kp Z             &kp X             &kp C              &kp V         &kp B    &kp N        &kp M         &kp COMMA           &kp DOT            &kp SLASH                 &kp ESC
-                                             &mo 3              &mo 1         &mo 2    &lt 2 ENTER  &kp SPACE     &kp LEFT_SHIFT
+                                             &trans             &trans        &trans   &lt 2 ENTER  &kp SPACE     &kp LEFT_SHIFT
             >;
         };
    };

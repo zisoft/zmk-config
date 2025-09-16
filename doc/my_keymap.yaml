@@ -23,7 +23,7 @@ layers:
   - {t: J, h: RCTRL}
   - {t: K, h: RIGHT SHIFT}
   - {t: L, h: RIGHT META}
-  - {t: '#', h: RIGHT ALT}
+  - {t: '', h: RIGHT ALT}
   - DELETE
   - {type: trans, left: Win}
   - Y
@@ -33,9 +33,52 @@ layers:
   - B
   - N
   - M
-  - ','
-  - .
-  - 
+  - {t: ',', s: ';'}
+  - {t: '.', s: ':'}
+  - {t: '-', s: '_'}
+  - ESC
+  - nav/Fn
+  - lower
+  - raise
+  - {t: ENTER, h: raise}
+  - SPACE
+  - LEFT SHIFT
+  colemak-dh:
+  - TAB
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Z
+  - ''
+  - BSPC
+  - ESC
+  - {t: A, h: RIGHT ALT}
+  - {t: R, h: LEFT META}
+  - {t: S, h: LEFT SHIFT}
+  - {t: T, h: LCTRL}
+  - G
+  - M
+  - {t: N, h: RCTRL}
+  - {t: E, h: RIGHT SHIFT}
+  - {t: I, h: RIGHT META}
+  - {t: O, h: RIGHT ALT}
+  - DELETE
+  - {type: trans, left: Win}
+  - Y
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
+  - {t: ',', s: ';'}
+  - {t: '.', s: ':'}
+  - {t: '-', s: '_'}
   - ESC
   - nav/Fn
   - lower
@@ -44,7 +87,7 @@ layers:
   - SPACE
   - LEFT SHIFT
   lower:
-  - {t: ▽, type: trans}
+  - ''
   - '!'
   - '"'
   - '@'
@@ -55,8 +98,8 @@ layers:
   - '/'
   - '?'
   - '^'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - {t: '1', h: RIGHT ALT}
   - {t: '2', h: LEFT META}
   - {t: '3', h: LEFT SHIFT}
@@ -67,28 +110,28 @@ layers:
   - {t: '8', h: RIGHT SHIFT}
   - {t: '9', h: RIGHT META}
   - {t: '0', h: RIGHT ALT}
-  - {t: ▽, type: trans}
+  - ''
   - '§'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
   - '~'
+  - '#'
   - "'"
   - {t: '´', s: '`'}
   - '\'
   - '+'
   - '='
-  - {t: '<', s: '>'}
+  - '<'
+  - '>'
   - '|'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
   raise:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - '7'
   - '8'
   - '9'
@@ -97,38 +140,38 @@ layers:
   - 'ö'
   - '['
   - ']'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
   - '4'
   - '5'
   - '6'
-  - {t: ▽, type: trans}
+  - ''
   - 'ü'
   - 'ß'
   - (
   - )
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
   - '0'
   - '1'
   - '2'
   - '3'
-  - {t: ▽, type: trans}
+  - ''
   - '€'
-  - {t: ▽, type: trans}
+  - ''
   - '{'
   - '}'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
   nav_fn:
   - F1
   - F2
@@ -142,19 +185,19 @@ layers:
   - F10
   - F11
   - F12
-  - {t: ▽, type: trans}
+  - ''
   - RIGHT ALT
   - LEFT META
   - LEFT SHIFT
   - LCTRL
-  - {t: ▽, type: trans}
+  - ''
   - LEFT
   - DOWN
   - UP
   - RIGHT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - {t: Colemak, h: toggle}
+  - ''
   - {t: BT, h: 'Mac'}
   - {t: BT, h: 'Win'}
   - {t: BT, h: '2'}
@@ -162,13 +205,13 @@ layers:
   - {t: BT, h: '4'}
   - {t: Mac, h: toggle}
   - {t: Win, h: toggle}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
   - BT CLEAR
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''

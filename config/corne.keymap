@@ -58,11 +58,11 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer { // Layer 0
+        default_layer_mac { // Layer 0
             bindings = <
 &kp TAB  &kp Q             &kp W             &kp E              &kp R         &kp T    &kp Y        &kp U         &kp I               &kp O              &kp P          &kp BSPC
 &kp ESC  &hml RIGHT_ALT A  &hml LEFT_META S  &hml LEFT_SHIFT D  &hml LCTRL F  &kp G    &kp H        &hmr RCTRL J  &hmr RIGHT_SHIFT K  &hmr RIGHT_META L  &kp RIGHT_ALT  &kp DELETE
-&trans   &kp Z             &kp X             &kp C              &kp V         &kp B    &kp N        &kp M         &kp COMMA           &kp DOT            &kp SLASH      &kp ESC
+&none    &kp Z             &kp X             &kp C              &kp V         &kp B    &kp N        &kp M         &kp COMMA           &kp DOT            &kp SLASH      &kp ESC
                                              &mo 4              &mo 2         &mo 3    &lt 3 ENTER  &kp SPACE     &kp LEFT_SHIFT
             >;
         };
@@ -77,7 +77,7 @@
             >;
         };
 
-        lower_layer { // Layer 2
+        lower_layer_mac { // Layer 2
             bindings = <
 &none       &kp LS(N1)         &kp LS(N2)         &kp RA(L)           &kp LS(N4)         &kp LS(N5)          &kp LS(N6)      &kp LS(RBKT)       &kp LS(N7)           &kp LS(MINUS)       &kp LA(LS(N6))     &none 
 &none       &hml RIGHT_ALT N1  &hml LEFT_META N2  &hml LEFT_SHIFT N3  &hml LCTRL N4      &kp N5              &kp N6          &hmr RCTRL N7      &hmr RIGHT_SHIFT N8  &hmr RIGHT_META N9  &hmr RIGHT_ALT N0  &none 
@@ -86,7 +86,7 @@
             >;
         };
 
-        raise_layer { // Layer 3
+        raise_layer_mac { // Layer 3
             bindings = <
 &none   &none   &kp N7  &kp N8  &kp N9  &none     &kp APOS          &kp SEMICOLON  &kp RA(N5)  &kp RA(RG(N6))  &none   &none 
 &none   &none   &kp N4  &kp N5  &kp N6  &none     &kp LEFT_BRACKET  &kp MINUS      &kp LS(N8)  &kp LS(N9)      &none   &none 
@@ -95,7 +95,7 @@
             >;
         };
 
-        nav_fn { // Layer 4
+        nav_fn_mac { // Layer 4
             bindings = <
 &kp F1  &kp F2         &kp F3         &kp F4          &kp F5        &kp F6          &kp F7          &kp F8          &kp F9        &kp F10          &kp F11  &kp F12
 &none   &kp RIGHT_ALT  &kp LEFT_META  &kp LEFT_SHIFT  &kp LCTRL     &none           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none    &to 1

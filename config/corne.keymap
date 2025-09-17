@@ -73,7 +73,7 @@
 &kp TAB  &kp Q             &kp W             &kp F              &kp P         &kp B    &kp J        &kp L         &kp U               &kp Z              &none             &kp BSPC
 &kp ESC  &hml RIGHT_ALT A  &hml LEFT_META R  &hml LEFT_SHIFT S  &hml LCTRL T  &kp G    &kp M        &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr RIGHT_META I  &hmr RIGHT_ALT O  &kp DELETE
 &none    &kp Y             &kp X             &kp C              &kp D         &kp V    &kp K        &kp H         &kp COMMA           &kp DOT            &kp SLASH         &kp ESC
-                                             &trans             &trans        &trans   &trans       &trans        &trans 
+                                             &mo 4              &mo 2         &mo 3    &lt 3 ENTER  &kp SPACE     &kp LEFT_SHIFT
             >;
         };
 
@@ -98,9 +98,9 @@
 
         nav_fn_mac { // Layer 4
             bindings = <
-&kp F1        &kp F2        &kp F3        &kp F4        &kp F5         &kp F6       &kp F7          &kp F8          &kp F9          &kp F10          &kp F11   &kp F12
-&to 0         &to 5         &none         &none         &none          &to 1        &none           &none           &kp UP_ARROW    &none            &none     &none
-&profile_mac  &profile_win  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &bt BT_CLR   &none           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none     &none
+&kp F1   &kp F2        &kp F3        &kp F4        &kp F5         &kp F6        &kp F7          &kp F8          &kp F9          &kp F10          &kp F11   &kp F12
+&to 0    &to 5         &none         &none         &none          &to 1         &none           &none           &kp UP_ARROW    &none            &none     &none
+&none    &profile_mac  &profile_win  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4  &none           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none     &bt BT_CLR 
                                           &trans        &trans         &trans       &trans          &trans          &trans 
             >;
         };
@@ -120,7 +120,7 @@
 &kp TAB       &kp Q             &kp W            &kp F              &kp P         &kp B    &kp J        &kp L         &kp U               &kp Z            &none             &kp BSPC
 &kp ESC       &hml RIGHT_ALT A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &hml LCTRL T  &kp G    &kp M        &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr LEFT_ALT I  &hmr RIGHT_ALT O  &kp DELETE
 &kp LEFT_WIN  &kp Y             &kp X            &kp C              &kp D         &kp V    &kp K        &kp H         &kp COMMA           &kp DOT          &kp SLASH         &kp ESC
-                                                 &trans             &trans        &trans   &trans       &trans        &trans 
+                                                 &mo 9              &mo 7         &mo 8    &lt 8 ENTER  &kp SPACE     &kp LEFT_SHIFT
             >;
         };
 
@@ -144,9 +144,9 @@
 
         nav_fn_win { // Layer 9
             bindings = <
-&kp F1          &kp F2        &kp F3         &kp F4         &kp F5         &kp F6       &kp F7    &kp F8           &kp F9           &kp F10          &kp F11  &kp F12
-&to 0           &to 5         &none          &none          &none          &to 6        &none     &none            &kp UP_ARROW     &none            &none    &none
-&profile_mac    &profile_win  &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &bt BT_CLR   &none     &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW  &none    &none
+&kp F1   &kp F2         &kp F3         &kp F4         &kp F5         &kp F6         &kp F7    &kp F8           &kp F9           &kp F10          &kp F11  &kp F12
+&to 0    &to 5          &none          &none          &none          &to 6          &none     &none            &kp UP_ARROW     &none            &none    &none
+&none    &profile_mac   &profile_win   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &none     &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW  &none    &bt BT_CLR
                                              &trans         &trans         &trans       &trans    &trans           &trans 
             >;
         };

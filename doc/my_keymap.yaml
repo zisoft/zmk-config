@@ -197,18 +197,18 @@ layers:
   - ''
   - ''
   - ''
+  - ''
   - {t: BT, h: 'Mac'}
   - {t: BT, h: 'Win'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - BT CLEAR
   - ''
   - $$mdi:arrow-left$$ 
   - $$mdi:arrow-down$$ 
   - $$mdi:arrow-right$$ 
   - ''
-  - ''
+  - BT CLEAR
   - {type: held}
   - ''
   - ''

@@ -100,16 +100,16 @@ layers:
   - '^'
   - '§'
   - ''
-  - '1'
-  - '2'
-  - '3'
-  - '4'
+  - {t: 1, h: RIGHT ALT}
+  - {t: 2, h: LEFT META}
+  - {t: 3, h: LEFT SHIFT}
+  - {t: 4, h: LCTRL}
   - '5'
   - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
+  - {t: 7, h: RCTRL}
+  - {t: 8, h: RIGHT SHIFT}
+  - {t: 9, h: RIGHT META}
+  - {t: 0, h: RIGHT ALT}
   - ''
   - ''
   - ''
@@ -123,12 +123,12 @@ layers:
   - '<'
   - '>'
   - '|'
-  - ''
-  - {type: held}
-  - ''
-  - ''
-  - ''
-  - ''
+  - nav/Fn
+  - {t: lower, type: held}
+  - raise
+  - {t: ENTER, h: raise}
+  - SPACE
+  - LEFT SHIFT
   raise:
   - ''
   - ''
@@ -143,16 +143,16 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - '4'
-  - '5'
-  - '6'
+  - {t: '', h: RIGHT ALT}
+  - {t: 4, h: LEFT META}
+  - {t: 5, h: LEFT SHIFT}
+  - {t: 6, h: LCTRL}
   - ''
   - 'ü'
-  - 'ß'
-  - (
-  - )
-  - ''
+  - {t: ß, h: RCTRL}
+  - {t: (, h: RIGHT SHIFT}
+  - {t: '', h: RIGHT META}
+  - {t: '', h: RIGHT ALT}
   - ''
   - ''
   - '0'
@@ -166,12 +166,12 @@ layers:
   - '}'
   - ''
   - ''
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  - ''
-  - ''
+  - nav/Fn
+  - lower
+  - {t: raise, type: held}
+  - {t: ENTER, h: raise}
+  - SPACE
+  - LEFT SHIFT
   nav_fn:
   - F1
   - F2
@@ -185,17 +185,17 @@ layers:
   - F10
   - F11
   - F12
-  - {t: Mac, h: toggle}
-  - {t: Win, h: toggle}
   - ''
-  - ''
-  - ''
+  - {t: '', h: RIGHT ALT}
+  - {t: '', h: LEFT META}
+  - {t: '', h: LEFT SHIFT}
+  - {t: '', h: LCTRL}
   - {t: Colemak, h: toggle}
-  - ''
-  - ''
-  - $$mdi:arrow-up$$
-  - ''
-  - ''
+  - {t: Win, h: toggle}
+  - {t: '', h: RCTRL}
+  - {t: $$mdi:arrow-up$$, h: RIGHT SHIFT}
+  - {t: '', h: RIGHT META}
+  - {t: '', h: RIGHT ALT}
   - ''
   - ''
   - {t: BT, h: 'Mac'}
@@ -203,15 +203,15 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - ''
+  - {t: Mac, h: toggle}
   - $$mdi:arrow-left$$ 
   - $$mdi:arrow-down$$ 
   - $$mdi:arrow-right$$ 
   - ''
   - BT CLEAR
-  - {type: held}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: nav/Fn, type: held}
+  - lower
+  - raise
+  - {t: ENTER, h: raise}
+  - SPACE
+  - LEFT SHIFT

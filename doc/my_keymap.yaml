@@ -185,30 +185,30 @@ layers:
   - F10
   - F11
   - F12
+  - {t: Mac, h: toggle}
+  - {t: Win, h: toggle}
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
   - ''
   - {t: Colemak, h: toggle}
+  - ''
+  - ''
+  - $$mdi:arrow-up$$
+  - ''
+  - ''
   - ''
   - {t: BT, h: 'Mac'}
   - {t: BT, h: 'Win'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - {t: Mac, h: toggle}
-  - {t: Win, h: toggle}
-  - ''
-  - ''
-  - ''
   - BT CLEAR
+  - ''
+  - $$mdi:arrow-left$$ 
+  - $$mdi:arrow-down$$ 
+  - $$mdi:arrow-right$$ 
+  - ''
+  - ''
   - {type: held}
   - ''
   - ''

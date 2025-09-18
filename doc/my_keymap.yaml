@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   default:
-  - TAB
+  - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
@@ -12,20 +12,20 @@ layers:
   - I
   - O
   - P
-  - BSPC
-  - ESC
+  - $$mdi:backspace$$
+  - Esc
   - {t: A, h: RIGHT ALT}
   - {t: S, h: LEFT META}
-  - {t: D, h: LEFT SHIFT}
+  - {t: D, h: LEFT $$mdi:apple-keyboard-shift$$}
   - {t: F, h: LCTRL}
   - G
   - H
   - {t: J, h: RCTRL}
-  - {t: K, h: RIGHT SHIFT}
+  - {t: K, h: RIGHT $$mdi:apple-keyboard-shift$$}
   - {t: L, h: RIGHT META}
   - {t: '', h: RIGHT ALT}
-  - DELETE
-  - Win
+  - Del
+  - {t: '', h: $$mdi:microsoft-windows$$}
   - Y
   - X
   - C
@@ -36,15 +36,15 @@ layers:
   - {t: ',', s: ';'}
   - {t: '.', s: ':'}
   - {t: '-', s: '_'}
-  - ESC
+  - ''
   - nav/Fn
   - lower
   - raise
-  - {t: ENTER, h: raise}
-  - SPACE
-  - LEFT SHIFT
+  - {t: $$mdi:keyboard-return$$, h: raise}
+  - $$mdi:keyboard-space$$
+  - $$mdi:apple-keyboard-shift$$
   colemak-dh:
-  - TAB
+  - $$mdi:keyboard-tab$$
   - Q
   - W
   - F
@@ -55,20 +55,20 @@ layers:
   - U
   - Z
   - ''
-  - BSPC
-  - ESC
+  - $$mdi:backspace$$
+  - Esc
   - {t: A, h: RIGHT ALT}
   - {t: R, h: LEFT META}
-  - {t: S, h: LEFT SHIFT}
+  - {t: S, h: LEFT $$mdi:apple-keyboard-shift$$}
   - {t: T, h: LCTRL}
   - G
   - M
   - {t: N, h: RCTRL}
-  - {t: E, h: RIGHT SHIFT}
+  - {t: E, h: RIGHT $$mdi:apple-keyboard-shift$$}
   - {t: I, h: RIGHT META}
   - {t: O, h: RIGHT ALT}
-  - DELETE
-  - Win
+  - Del
+  - {t: '', h: $$mdi:microsoft-windows$$}
   - Y
   - X
   - C
@@ -79,13 +79,13 @@ layers:
   - {t: ',', s: ';'}
   - {t: '.', s: ':'}
   - {t: '-', s: '_'}
-  - ESC
+  - ''
   - nav/Fn
   - lower
   - raise
-  - {t: ENTER, h: raise}
-  - SPACE
-  - LEFT SHIFT
+  - {t: $$mdi:keyboard-return$$, h: raise}
+  - $$mdi:keyboard-space$$
+  - LEFT $$mdi:apple-keyboard-shift$$
   lower:
   - ''
   - '!'
@@ -102,16 +102,16 @@ layers:
   - ''
   - {t: 1, h: RIGHT ALT}
   - {t: 2, h: LEFT META}
-  - {t: 3, h: LEFT SHIFT}
+  - {t: 3, h: LEFT $$mdi:apple-keyboard-shift$$}
   - {t: 4, h: LCTRL}
   - '5'
   - '6'
   - {t: 7, h: RCTRL}
-  - {t: 8, h: RIGHT SHIFT}
+  - {t: 8, h: RIGHT $$mdi:apple-keyboard-shift$$}
   - {t: 9, h: RIGHT META}
   - {t: 0, h: RIGHT ALT}
   - ''
-  - ''
+  - {t: '', h: $$mdi:microsoft-windows$$}
   - ''
   - '~'
   - '#'
@@ -126,9 +126,9 @@ layers:
   - nav/Fn
   - {t: lower, type: held}
   - raise
-  - {t: ENTER, h: raise}
-  - SPACE
-  - LEFT SHIFT
+  - {t: $$mdi:keyboard-return$$, h: raise}
+  - $$mdi:keyboard-space$$
+  - LEFT $$mdi:apple-keyboard-shift$$
   raise:
   - ''
   - ''
@@ -145,16 +145,16 @@ layers:
   - ''
   - {t: '', h: RIGHT ALT}
   - {t: 4, h: LEFT META}
-  - {t: 5, h: LEFT SHIFT}
+  - {t: 5, h: LEFT $$mdi:apple-keyboard-shift$$}
   - {t: 6, h: LCTRL}
   - ''
   - 'ü'
   - {t: ß, h: RCTRL}
-  - {t: (, h: RIGHT SHIFT}
+  - {t: (, h: RIGHT $$mdi:apple-keyboard-shift$$}
   - {t: '', h: RIGHT META}
   - {t: '', h: RIGHT ALT}
   - ''
-  - ''
+  - {t: '', h: $$mdi:microsoft-windows$$}
   - '0'
   - '1'
   - '2'
@@ -169,9 +169,9 @@ layers:
   - nav/Fn
   - lower
   - {t: raise, type: held}
-  - {t: ENTER, h: raise}
-  - SPACE
-  - LEFT SHIFT
+  - {t: $$mdi:keyboard-return$$, h: raise}
+  - $$mdi:keyboard-space$$
+  - LEFT $$mdi:apple-keyboard-shift$$
   nav_fn:
   - F1
   - F2
@@ -188,30 +188,30 @@ layers:
   - ''
   - {t: '', h: RIGHT ALT}
   - {t: '', h: LEFT META}
-  - {t: '', h: LEFT SHIFT}
+  - {t: '', h: LEFT $$mdi:apple-keyboard-shift$$}
   - {t: '', h: LCTRL}
   - {t: Colemak, h: toggle}
   - {t: Win, h: toggle}
   - {t: '', h: RCTRL}
-  - {t: $$mdi:arrow-up$$, h: RIGHT SHIFT}
+  - {t: $$mdi:arrow-up$$, h: RIGHT $$mdi:apple-keyboard-shift$$}
   - {t: '', h: RIGHT META}
   - {t: '', h: RIGHT ALT}
   - ''
-  - ''
-  - {t: BT, h: 'Mac'}
-  - {t: BT, h: 'Win'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - {t: '', h: $$mdi:microsoft-windows$$}
+  - {t: $$mdi:bluetooth$$, h: 'Mac'}
+  - {t: $$mdi:bluetooth$$, h: 'Win'}
+  - {t: $$mdi:bluetooth$$, h: '2'}
+  - {t: $$mdi:bluetooth$$, h: '3'}
+  - {t: $$mdi:bluetooth$$, h: '4'}
   - {t: Mac, h: toggle}
   - $$mdi:arrow-left$$ 
   - $$mdi:arrow-down$$ 
   - $$mdi:arrow-right$$ 
   - ''
-  - BT CLEAR
+  - {t: $$mdi:bluetooth$$, h: 'CLEAR'}
   - {t: nav/Fn, type: held}
   - lower
   - raise
-  - {t: ENTER, h: raise}
-  - SPACE
-  - LEFT SHIFT
+  - {t: $$mdi:keyboard-return$$, h: raise}
+  - $$mdi:keyboard-space$$
+  - LEFT $$mdi:apple-keyboard-shift$$

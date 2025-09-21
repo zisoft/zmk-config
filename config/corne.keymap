@@ -9,13 +9,13 @@
 #include <dt-bindings/zmk/keys.h>
 
 // Layers
-#define COLEMAC_MAC 0
+#define COLEMAK_MAC 0
 #define QWERTZ_MAC 1
 #define LOWER_MAC 2
 #define RAISE_MAC 3
 #define NAV_FN_MAC 4
 
-#define COLEMAC_WIN 5
+#define COLEMAK_WIN 5
 #define QWERTZ_WIN 6
 #define LOWER_WIN 7
 #define RAISE_WIN 8
@@ -57,14 +57,14 @@
         profile_mac: profile_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &to COLEMAC_MAC>;
+            bindings = <&bt BT_SEL 0 &to COLEMAK_MAC>;
             label = "PROFILE_MAC";
         };
 
         profile_win: profile_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &to COLEMAC_WIN>;
+            bindings = <&bt BT_SEL 1 &to COLEMAK_WIN>;
             label = "PROFILE_WIN";
         };
     };
@@ -72,8 +72,8 @@
     keymap {
         compatible = "zmk,keymap";
 
-        colemak_dh_mac { // Layer 0 (COLEMAC_MAC)
-            display-name = "Mac-CO";
+        colemak_dh_mac { // Layer 0 (COLEMAK_MAC)
+//            display-name = "Mac-CO";
             bindings = <
 &kp TAB  &kp Q             &kp W             &kp F              &kp P         &kp B        &kp J        &kp L         &kp U               &kp Z              &none             &kp BSPC
 &kp ESC  &hml RIGHT_ALT A  &hml LEFT_META R  &hml LEFT_SHIFT S  &hml LCTRL T  &kp G        &kp M        &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr RIGHT_META I  &hmr RIGHT_ALT O  &kp DELETE
@@ -114,13 +114,13 @@
         nav_fn_mac { // Layer 4 (NAV_FN_MAC)
             bindings = <
 &kp F1   &kp F2        &kp F3        &kp F4        &kp F5         &kp F6              &kp F7            &kp F8          &kp F9          &kp F10          &kp F11   &kp F12
-&none    &none         &none         &none         &none          &to QWERTZ_MAC      &to COLEMAC_WIN    &none           &kp UP_ARROW    &none            &none     &none
-&none    &profile_mac  &profile_win  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4        &to COLEMAC_MAC    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none     &bt BT_CLR 
+&none    &none         &none         &none         &none          &to QWERTZ_MAC      &to COLEMAK_WIN    &none           &kp UP_ARROW    &none            &none     &none
+&none    &profile_mac  &profile_win  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4        &to COLEMAK_MAC    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none     &bt BT_CLR 
                                      &mo NAV_FN_MAC   &mo LOWER_MAC   &mo RAISE_MAC        &lt RAISE_MAC ENTER  &kp SPACE   &kp LEFT_SHIFT
             >;
         };
 
-        colemak_dh_win { // Layer 5 (COLEMAC_WIN)
+        colemak_dh_win { // Layer 5 (COLEMAK_WIN)
             display-name = "Win-CO";
             bindings = <
 &kp TAB       &kp Q             &kp W            &kp F              &kp P         &kp B    &kp J        &kp L         &kp U               &kp Z            &none             &kp BSPC
@@ -161,8 +161,8 @@
         nav_fn_win { // Layer 9 (NAV_FN_WIN)
             bindings = <
 &kp F1   &kp F2         &kp F3         &kp F4           &kp F5         &kp F6                   &kp F7              &kp F8           &kp F9                      &kp F10           &kp F11          &kp F12
-&none    &kp RIGHT_ALT  &kp LEFT_ALT   &kp LEFT_SHIFT   &kp LCTRL      &to QWERTZ_WIN           &to COLEMAC_WIN     &kp RCTRL        &hmr RIGHT
-&trans   &profile_mac   &profile_win   &bt BT_SEL 2     &bt BT_SEL 3   &bt BT_SEL 4             &to COLEMAC_MAC     &kp LEFT_ARROW   &kp DOWN_ARROW              &kp RIGHT_ARROW   &none            &bt BT_CLR
+&none    &kp RIGHT_ALT  &kp LEFT_ALT   &kp LEFT_SHIFT   &kp LCTRL      &to QWERTZ_WIN           &to COLEMAK_WIN     &kp RCTRL        &hmr RIGHT
+&trans   &profile_mac   &profile_win   &bt BT_SEL 2     &bt BT_SEL 3   &bt BT_SEL 4             &to COLEMAK_MAC     &kp LEFT_ARROW   &kp DOWN_ARROW              &kp RIGHT_ARROW   &none            &bt BT_CLR
                               &mo NAV_FN_WIN   &mo LOWER_WIN   &mo RAISE_WIN          &lt RAISE_WIN ENTER  &kp SPACE     &kp LEFT_SHIFT
             >;
         };

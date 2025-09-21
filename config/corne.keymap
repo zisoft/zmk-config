@@ -97,7 +97,7 @@
 &none       &kp LS(N1)          &kp LS(N2)         &kp RA(L)           &kp LS(N4)         &kp LS(N5)          &kp LS(N6)      &kp LS(RBKT)       &kp LS(N7)           &kp LS(MINUS)       &kp LA(LS(N6))     &kp LS(N3) 
 &none       &hml RIGHT_ALT N1   &hml LEFT_META N2  &hml LEFT_SHIFT N3  &hml LCTRL N4      &kp N5              &kp N6          &hmr RCTRL N7      &hmr RIGHT_SHIFT N8  &hmr RIGHT_META N9  &hmr RIGHT_ALT N0  &none 
 &none       &none               &kp LA(N)          &kp BACKSLASH       &kp LS(BACKSLASH)  &kp EQUAL           &kp RA(LS(N7))  &kp RIGHT_BRACKET  &kp LS(N0)           &kp GRAVE           &kp LS(GRAVE)      &kp RA(N7)
-                                             &trans   &trans   &trans        &trans   &trans   &trans 
+                                     &mo NAV_FN_MAC   &mo LOWER_MAC   &mo RAISE_MAC        &lt RAISE_MAC ENTER  &kp SPACE   &kp LEFT_SHIFT
             >;
         };
 
@@ -106,7 +106,7 @@
 &none   &none           &kp N7             &kp N8              &kp N9         &none                 &kp APOS          &kp SEMICOLON      &kp RA(N5)                &kp RA(RG(N6))           &none            &none 
 &none   &kp RIGHT_ALT   &hml LEFT_META N4  &hml LEFT_SHIFT N5  &hml LCTRL N6  &none                 &kp LEFT_BRACKET  &hmr RCTRL MINUS   &hmr RIGHT_SHIFT LS(N8)   &hmr RIGHT_META LS(N9)   &kp RIGHT_ALT    &none 
 &none   &kp N0          &kp N1             &kp N2  &kp N3      &none          &kp RA(E)             &none             &kp RA(N8)         &kp RA(N9)       &none   &none 
-                                             &trans   &trans   &trans        &trans   &trans   &trans 
+                                     &mo NAV_FN_MAC   &mo LOWER_MAC   &mo RAISE_MAC        &lt RAISE_MAC ENTER  &kp SPACE   &kp LEFT_SHIFT
 
             >;
         };
@@ -116,7 +116,7 @@
 &kp F1   &kp F2        &kp F3        &kp F4        &kp F5         &kp F6              &kp F7            &kp F8          &kp F9          &kp F10          &kp F11   &kp F12
 &none    &none         &none         &none         &none          &to QWERTZ_MAC      &to COLEMAC_WIN    &none           &kp UP_ARROW    &none            &none     &none
 &none    &profile_mac  &profile_win  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4        &to COLEMAC_MAC    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none     &bt BT_CLR 
-                                             &trans   &trans   &trans        &trans   &trans   &trans 
+                                     &mo NAV_FN_MAC   &mo LOWER_MAC   &mo RAISE_MAC        &lt RAISE_MAC ENTER  &kp SPACE   &kp LEFT_SHIFT
             >;
         };
 
@@ -145,7 +145,7 @@
 &none       &kp LS(N1)         &kp LS(N2)             &kp RA(Q)              &kp LS(N4)             &kp LS(N5)            &kp LS(N6)     &kp LS(RBKT)       &kp LS(N7)           &kp LS(MINUS)     &kp GRAVE          &kp LS(N3) 
 &none       &hml RIGHT_ALT N1  &hml LEFT_ALT N2       &hml LEFT_SHIFT N3     &hml LCTRL N4          &kp N5                &kp N6         &hmr RCTRL N7      &hmr RIGHT_SHIFT N8  &hmr LEFT_ALT N9  &hmr RIGHT_ALT N0  &none 
 &trans      &none              &kp RA(RIGHT_BRACKET)  &kp BACKSLASH          &kp LS(BACKSLASH)      &kp EQUAL             &kp RA(MINUS)  &kp RIGHT_BRACKET  &kp LS(N0)           &kp NUBS          &kp LS(NUBS)       &kp RA(NUBS)
-                                                                 &trans             &trans        &trans             &trans       &trans        &trans 
+                              &mo NAV_FN_WIN   &mo LOWER_WIN   &mo RAISE_WIN          &lt RAISE_WIN ENTER  &kp SPACE     &kp LEFT_SHIFT
             >;
         };
 
@@ -154,7 +154,7 @@
 &none   &none           &kp N7            &kp N8              &kp N9         &none          &kp APOS           &kp SEMICOLON      &kp RA(N8)               &kp RA(N9)             &none            &none 
 &none   &kp RIGHT_ALT   &hml LEFT_ALT N4  &hml LEFT_SHIFT N5  &hml LCTRL N6  &none          &kp LEFT_BRACKET   &hmr RCTRL MINUS   &hmr RIGHT_SHIFT RS(N8)  &hmr LEFT_ALT RS(N9)   &kp RIGHT_ALT    &none 
 &trans  &kp N0          &kp N1            &kp N2              &kp N3         &none          &kp RA(E)          &none              &kp RA(N7)               &kp RA(N0)             &none            &none 
-                                                          &trans   &trans   &trans           &trans   &trans   &trans 
+                              &mo NAV_FN_WIN   &mo LOWER_WIN   &mo RAISE_WIN          &lt RAISE_WIN ENTER  &kp SPACE     &kp LEFT_SHIFT
             >;
         };
 
@@ -163,7 +163,7 @@
 &kp F1   &kp F2         &kp F3         &kp F4           &kp F5         &kp F6                   &kp F7              &kp F8           &kp F9                      &kp F10           &kp F11          &kp F12
 &none    &kp RIGHT_ALT  &kp LEFT_ALT   &kp LEFT_SHIFT   &kp LCTRL      &to QWERTZ_WIN           &to COLEMAC_WIN     &kp RCTRL        &hmr RIGHT
 &trans   &profile_mac   &profile_win   &bt BT_SEL 2     &bt BT_SEL 3   &bt BT_SEL 4             &to COLEMAC_MAC     &kp LEFT_ARROW   &kp DOWN_ARROW              &kp RIGHT_ARROW   &none            &bt BT_CLR
-                                                          &trans   &trans   &trans           &trans   &trans   &trans 
+                              &mo NAV_FN_WIN   &mo LOWER_WIN   &mo RAISE_WIN          &lt RAISE_WIN ENTER  &kp SPACE     &kp LEFT_SHIFT
             >;
         };
 

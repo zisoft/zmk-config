@@ -14,6 +14,7 @@
 #define LOWER_MAC 2
 #define RAISE_MAC 3
 #define NAV_FN_MAC 4
+
 #define COLEMAC_WIN 5
 #define QWERTZ_WIN 6
 #define LOWER_WIN 7
@@ -53,18 +54,18 @@
     };
 
     macros {
-        profile_win: profile_win {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &to COLEMAC_WIN>;
-            label = "PROFILE_WIN";
-        };
-
         profile_mac: profile_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 0 &to COLEMAC_MAC>;
             label = "PROFILE_MAC";
+        };
+
+        profile_win: profile_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1 &to COLEMAC_WIN>;
+            label = "PROFILE_WIN";
         };
     };
 
@@ -81,7 +82,7 @@
             >;
         };
 
-        qwerz_layer_mac { // Layer 1 (QWERTZ_MAC)
+        qwertz_layer_mac { // Layer 1 (QWERTZ_MAC)
             display-name = "Mac-QW";
             bindings = <
 &kp TAB  &kp Q             &kp W             &kp E              &kp R         &kp T        &kp Y        &kp U         &kp I               &kp O              &kp P          &kp BSPC
@@ -113,7 +114,7 @@
         nav_fn_mac { // Layer 4 (NAV_FN_MAC)
             bindings = <
 &kp F1   &kp F2        &kp F3        &kp F4        &kp F5         &kp F6              &kp F7            &kp F8          &kp F9          &kp F10          &kp F11   &kp F12
-&none    &none         &none         &none         &none          &to COLEMAC_MAC     &to COLEMAC_WIN    &none           &kp UP_ARROW    &none            &none     &none
+&none    &none         &none         &none         &none          &to QWERTZ_MAC      &to COLEMAC_WIN    &none           &kp UP_ARROW    &none            &none     &none
 &none    &profile_mac  &profile_win  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4        &to COLEMAC_MAC    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none     &bt BT_CLR 
                                              &trans   &trans   &trans        &trans   &trans   &trans 
             >;
@@ -129,7 +130,7 @@
             >;
         };
 
-        default_layer_win { // Layer 6 (QWERTZ_WIN)
+        qwertz_layer_win { // Layer 6 (QWERTZ_WIN)
             display-name = "Win-QW";
             bindings = <
 &kp TAB       &kp Q             &kp W            &kp E              &kp R             &kp T    &kp Y        &kp U         &kp I               &kp O            &kp P          &kp BSPC
@@ -160,7 +161,7 @@
         nav_fn_win { // Layer 9 (NAV_FN_WIN)
             bindings = <
 &kp F1   &kp F2         &kp F3         &kp F4           &kp F5         &kp F6                   &kp F7              &kp F8           &kp F9                      &kp F10           &kp F11          &kp F12
-&none    &kp RIGHT_ALT  &kp LEFT_ALT   &kp LEFT_SHIFT   &kp LCTRL      &to COLEMAC_WIN          &to COLEMAC_WIN     &kp RCTRL        &hmr RIGHT
+&none    &kp RIGHT_ALT  &kp LEFT_ALT   &kp LEFT_SHIFT   &kp LCTRL      &to QWERTZ_WIN           &to COLEMAC_WIN     &kp RCTRL        &hmr RIGHT
 &trans   &profile_mac   &profile_win   &bt BT_SEL 2     &bt BT_SEL 3   &bt BT_SEL 4             &to COLEMAC_MAC     &kp LEFT_ARROW   &kp DOWN_ARROW              &kp RIGHT_ARROW   &none            &bt BT_CLR
                                                           &trans   &trans   &trans           &trans   &trans   &trans 
             >;

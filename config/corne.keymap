@@ -9,13 +9,13 @@
 #include <dt-bindings/zmk/keys.h>
 
 // Layers
-#define DEFAULT_MAC 0
-#define COLEMAC_MAC 1
+#define COLEMAC_MAC 0
+#define QWERTZ_MAC 1
 #define LOWER_MAC 2
 #define RAISE_MAC 3
 #define NAV_FN_MAC 4
-#define DEFAULT_WIN 5
-#define COLEMAC_WIN 6
+#define COLEMAC_WIN 5
+#define QWERTZ_WIN 6
 #define LOWER_WIN 7
 #define RAISE_WIN 8
 #define NAV_FN_WIN 9
@@ -56,14 +56,14 @@
         profile_win: profile_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &to DEFAULT_WIN>;
+            bindings = <&bt BT_SEL 1 &to COLEMAC_WIN>;
             label = "PROFILE_WIN";
         };
 
         profile_mac: profile_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &to DEFAULT_MAC>;
+            bindings = <&bt BT_SEL 0 &to COLEMAC_MAC>;
             label = "PROFILE_MAC";
         };
     };
@@ -71,21 +71,22 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer_mac { // Layer 0 (DEFAULT_MAC)
-            bindings = <
-&kp TAB  &kp Q             &kp W             &kp E              &kp R         &kp T        &kp Y        &kp U         &kp I               &kp O              &kp P          &kp BSPC
-&kp ESC  &hml RIGHT_ALT A  &hml LEFT_META S  &hml LEFT_SHIFT D  &hml LCTRL F  &kp G        &kp H        &hmr RCTRL J  &hmr RIGHT_SHIFT K  &hmr RIGHT_META L  &kp RIGHT_ALT  &kp DELETE
-&none    &kp Z             &kp X             &kp C              &kp V         &kp B        &kp N        &kp M         &kp COMMA           &kp DOT            &kp SLASH      &none
-                                     &mo NAV_FN_MAC   &mo LOWER_MAC   &mo RAISE_MAC        &lt RAISE_MAC ENTER  &kp SPACE   &kp LEFT_SHIFT
-            >;
-        };
-
-        colemak_dh_mac { // Layer 1 (COLEMAC_MAC)
-            display-name = "Colemak";
+        colemak_dh_mac { // Layer 0 (COLEMAC_MAC)
+            display-name = "Mac-CO";
             bindings = <
 &kp TAB  &kp Q             &kp W             &kp F              &kp P         &kp B        &kp J        &kp L         &kp U               &kp Z              &none             &kp BSPC
 &kp ESC  &hml RIGHT_ALT A  &hml LEFT_META R  &hml LEFT_SHIFT S  &hml LCTRL T  &kp G        &kp M        &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr RIGHT_META I  &hmr RIGHT_ALT O  &kp DELETE
 &none    &kp Y             &kp X             &kp C              &kp D         &kp V        &kp K        &kp H         &kp COMMA           &kp DOT            &kp SLASH         &none
+                                     &mo NAV_FN_MAC   &mo LOWER_MAC   &mo RAISE_MAC        &lt RAISE_MAC ENTER  &kp SPACE   &kp LEFT_SHIFT
+            >;
+        };
+
+        qwerz_layer_mac { // Layer 1 (QWERTZ_MAC)
+            display-name = "Mac-QW";
+            bindings = <
+&kp TAB  &kp Q             &kp W             &kp E              &kp R         &kp T        &kp Y        &kp U         &kp I               &kp O              &kp P          &kp BSPC
+&kp ESC  &hml RIGHT_ALT A  &hml LEFT_META S  &hml LEFT_SHIFT D  &hml LCTRL F  &kp G        &kp H        &hmr RCTRL J  &hmr RIGHT_SHIFT K  &hmr RIGHT_META L  &kp RIGHT_ALT  &kp DELETE
+&none    &kp Z             &kp X             &kp C              &kp V         &kp B        &kp N        &kp M         &kp COMMA           &kp DOT            &kp SLASH      &none
                                      &mo NAV_FN_MAC   &mo LOWER_MAC   &mo RAISE_MAC        &lt RAISE_MAC ENTER  &kp SPACE   &kp LEFT_SHIFT
             >;
         };
@@ -112,27 +113,28 @@
         nav_fn_mac { // Layer 4 (NAV_FN_MAC)
             bindings = <
 &kp F1   &kp F2        &kp F3        &kp F4        &kp F5         &kp F6              &kp F7            &kp F8          &kp F9          &kp F10          &kp F11   &kp F12
-&none    &none         &none         &none         &none          &to COLEMAC_MAC     &to DEFAULT_WIN   &none           &kp UP_ARROW    &none            &none     &none
-&none    &profile_mac  &profile_win  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4        &to DEFAULT_MAC   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none     &bt BT_CLR 
+&none    &none         &none         &none         &none          &to COLEMAC_MAC     &to COLEMAC_WIN    &none           &kp UP_ARROW    &none            &none     &none
+&none    &profile_mac  &profile_win  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4        &to COLEMAC_MAC    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none     &bt BT_CLR 
                                              &trans   &trans   &trans        &trans   &trans   &trans 
             >;
         };
 
-        default_layer_win { // Layer 5 (DEFAULT_WIN)
-            bindings = <
-&kp TAB       &kp Q             &kp W            &kp E              &kp R             &kp T    &kp Y        &kp U         &kp I               &kp O            &kp P          &kp BSPC
-&kp ESC       &hml RIGHT_ALT A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LCTRL F      &kp G    &kp H        &hmr RCTRL J  &hmr RIGHT_SHIFT K  &hmr LEFT_ALT L  &kp RIGHT_ALT  &kp DELETE
-&kp LEFT_WIN  &kp Z             &kp X            &kp C              &kp V             &kp B    &kp N        &kp M         &kp COMMA           &kp DOT          &kp SLASH      &kp ESC
-                              &mo NAV_FN_WIN   &mo LOWER_WIN   &mo RAISE_WIN          &lt RAISE_WIN ENTER  &kp SPACE     &kp LEFT_SHIFT
-            >;
-        };
-
-        colemak_dh_win { // Layer 6 (COLEMAC_WIN)
-            display-name = "Colemak";
+        colemak_dh_win { // Layer 5 (COLEMAC_WIN)
+            display-name = "Win-CO";
             bindings = <
 &kp TAB       &kp Q             &kp W            &kp F              &kp P         &kp B    &kp J        &kp L         &kp U               &kp Z            &none             &kp BSPC
 &kp ESC       &hml RIGHT_ALT A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &hml LCTRL T  &kp G    &kp M        &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr LEFT_ALT I  &hmr RIGHT_ALT O  &kp DELETE
 &kp LEFT_WIN  &kp Y             &kp X            &kp C              &kp D         &kp V    &kp K        &kp H         &kp COMMA           &kp DOT          &kp SLASH         &kp ESC
+                              &mo NAV_FN_WIN   &mo LOWER_WIN   &mo RAISE_WIN          &lt RAISE_WIN ENTER  &kp SPACE     &kp LEFT_SHIFT
+            >;
+        };
+
+        default_layer_win { // Layer 6 (QWERTZ_WIN)
+            display-name = "Win-QW";
+            bindings = <
+&kp TAB       &kp Q             &kp W            &kp E              &kp R             &kp T    &kp Y        &kp U         &kp I               &kp O            &kp P          &kp BSPC
+&kp ESC       &hml RIGHT_ALT A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LCTRL F      &kp G    &kp H        &hmr RCTRL J  &hmr RIGHT_SHIFT K  &hmr LEFT_ALT L  &kp RIGHT_ALT  &kp DELETE
+&kp LEFT_WIN  &kp Z             &kp X            &kp C              &kp V             &kp B    &kp N        &kp M         &kp COMMA           &kp DOT          &kp SLASH      &kp ESC
                               &mo NAV_FN_WIN   &mo LOWER_WIN   &mo RAISE_WIN          &lt RAISE_WIN ENTER  &kp SPACE     &kp LEFT_SHIFT
             >;
         };
@@ -158,8 +160,8 @@
         nav_fn_win { // Layer 9 (NAV_FN_WIN)
             bindings = <
 &kp F1   &kp F2         &kp F3         &kp F4           &kp F5         &kp F6                   &kp F7              &kp F8           &kp F9                      &kp F10           &kp F11          &kp F12
-&none    &kp RIGHT_ALT  &kp LEFT_ALT   &kp LEFT_SHIFT   &kp LCTRL      &to COLEMAC_WIN          &to DEFAULT_WIN     &kp RCTRL        &hmr RIGHT_SHIFT UP_ARROW   &kp LEFT_ALT      &kp RIGHT_ALT    &none
-&trans   &profile_mac   &profile_win   &bt BT_SEL 2     &bt BT_SEL 3   &bt BT_SEL 4             &to DEFAULT_MAC     &kp LEFT_ARROW   &kp DOWN_ARROW              &kp RIGHT_ARROW   &none            &bt BT_CLR
+&none    &kp RIGHT_ALT  &kp LEFT_ALT   &kp LEFT_SHIFT   &kp LCTRL      &to COLEMAC_WIN          &to COLEMAC_WIN     &kp RCTRL        &hmr RIGHT
+&trans   &profile_mac   &profile_win   &bt BT_SEL 2     &bt BT_SEL 3   &bt BT_SEL 4             &to COLEMAC_MAC     &kp LEFT_ARROW   &kp DOWN_ARROW              &kp RIGHT_ARROW   &none            &bt BT_CLR
                                                           &trans   &trans   &trans           &trans   &trans   &trans 
             >;
         };

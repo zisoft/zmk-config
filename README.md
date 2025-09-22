@@ -4,7 +4,7 @@ This is the ZMK config for my Corne keyboard which I use both on my Mac and on m
 
 To get the exact same keyboard layout both on macOS and Windows I have implented different layers for each OS.
 
-Additionaly I have added layers to easily switch to a colemak-dh layout, because I am currently trying this out.
+Additionaly I have added layers to easily switch between QWERTZ and Colemak-DH.
 
 All layer switching is done via the `nav_fn` layer.
 

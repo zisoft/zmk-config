@@ -1,48 +1,5 @@
 layout: {zmk_keyboard: corne}
 layers:
-  default:
-  - $$mdi:keyboard-tab$$
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Z
-  - U
-  - I
-  - O
-  - P
-  - $$mdi:backspace$$
-  - Esc
-  - {t: A, h: RIGHT ALT}
-  - {t: S, h: LEFT META}
-  - {t: D, h: LEFT $$mdi:apple-keyboard-shift$$}
-  - {t: F, h: LCTRL}
-  - G
-  - H
-  - {t: J, h: RCTRL}
-  - {t: K, h: RIGHT $$mdi:apple-keyboard-shift$$}
-  - {t: L, h: RIGHT META}
-  - {t: '', h: RIGHT ALT}
-  - Del
-  - {t: '', h: $$mdi:microsoft-windows$$}
-  - Y
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - {t: ',', s: ';'}
-  - {t: '.', s: ':'}
-  - {t: '-', s: '_'}
-  - ''
-  - nav/Fn
-  - lower
-  - raise
-  - {t: $$mdi:keyboard-return$$, h: raise}
-  - $$mdi:keyboard-space$$
-  - $$mdi:apple-keyboard-shift$$
   colemak-dh:
   - $$mdi:keyboard-tab$$
   - Q
@@ -55,7 +12,7 @@ layers:
   - U
   - Z
   - ''
-  - $$mdi:backspace$$
+  - $$material:backspace$$
   - Esc
   - {t: A, h: RIGHT ALT}
   - {t: R, h: LEFT META}
@@ -86,6 +43,49 @@ layers:
   - {t: $$mdi:keyboard-return$$, h: raise}
   - $$mdi:keyboard-space$$
   - LEFT $$mdi:apple-keyboard-shift$$
+  qwertz:
+  - $$mdi:keyboard-tab$$
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Z
+  - U
+  - I
+  - O
+  - P
+  - $$material:backspace$$
+  - Esc
+  - {t: A, h: RIGHT ALT}
+  - {t: S, h: LEFT META}
+  - {t: D, h: LEFT $$mdi:apple-keyboard-shift$$}
+  - {t: F, h: LCTRL}
+  - G
+  - H
+  - {t: J, h: RCTRL}
+  - {t: K, h: RIGHT $$mdi:apple-keyboard-shift$$}
+  - {t: L, h: RIGHT META}
+  - {t: '', h: RIGHT ALT}
+  - Del
+  - {t: '', h: $$mdi:microsoft-windows$$}
+  - Y
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - {t: ',', s: ';'}
+  - {t: '.', s: ':'}
+  - {t: '-', s: '_'}
+  - ''
+  - nav/Fn
+  - lower
+  - raise
+  - {t: $$mdi:keyboard-return$$, h: raise}
+  - $$mdi:keyboard-space$$
+  - $$mdi:apple-keyboard-shift$$
   lower:
   - ''
   - '!'
@@ -190,20 +190,20 @@ layers:
   - {t: '', h: LEFT META}
   - {t: '', h: LEFT $$mdi:apple-keyboard-shift$$}
   - {t: '', h: LCTRL}
-  - {t: Colemak, h: toggle}
-  - {t: Win, h: toggle}
+  - {t: QWERTZ, h: toggle}
+  - {t: $$mdi:microsoft-windows$$, h: toggle}
   - {t: '', h: RCTRL}
   - {t: $$mdi:arrow-up$$, h: RIGHT $$mdi:apple-keyboard-shift$$}
   - {t: '', h: RIGHT META}
   - {t: '', h: RIGHT ALT}
   - ''
   - {t: '', h: $$mdi:microsoft-windows$$}
-  - {t: $$mdi:bluetooth$$, h: 'Mac'}
-  - {t: $$mdi:bluetooth$$, h: 'Win'}
+  - {t: $$mdi:bluetooth$$, h: $$mdi:apple$$}
+  - {t: $$mdi:bluetooth$$, h: $$mdi:microsoft-windows$$}
   - {t: $$mdi:bluetooth$$, h: '2'}
   - {t: $$mdi:bluetooth$$, h: '3'}
   - {t: $$mdi:bluetooth$$, h: '4'}
-  - {t: Mac, h: toggle}
+  - {t: $$mdi:apple$$, h: toggle}
   - $$mdi:arrow-left$$ 
   - $$mdi:arrow-down$$ 
   - $$mdi:arrow-right$$ 

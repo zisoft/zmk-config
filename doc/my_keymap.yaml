@@ -42,7 +42,7 @@ layers:
   - raise
   - {t: $$mdi:keyboard-return$$, h: raise}
   - $$mdi:keyboard-space$$
-  - LEFT $$mdi:apple-keyboard-shift$$
+  - Caps Word
   qwertz:
   - $$mdi:keyboard-tab$$
   - Q
@@ -85,7 +85,7 @@ layers:
   - raise
   - {t: $$mdi:keyboard-return$$, h: raise}
   - $$mdi:keyboard-space$$
-  - $$mdi:apple-keyboard-shift$$
+  - Caps Word
   lower:
   - ''
   - '!'
@@ -128,7 +128,7 @@ layers:
   - raise
   - {t: $$mdi:keyboard-return$$, h: raise}
   - $$mdi:keyboard-space$$
-  - LEFT $$mdi:apple-keyboard-shift$$
+  - Caps Word
   raise:
   - ''
   - ''
@@ -171,7 +171,7 @@ layers:
   - {t: raise, type: held}
   - {t: $$mdi:keyboard-return$$, h: raise}
   - $$mdi:keyboard-space$$
-  - LEFT $$mdi:apple-keyboard-shift$$
+  - Caps Word
   nav_fn:
   - F1
   - F2
@@ -214,4 +214,4 @@ layers:
   - raise
   - {t: $$mdi:keyboard-return$$, h: raise}
   - $$mdi:keyboard-space$$
-  - LEFT $$mdi:apple-keyboard-shift$$
+  - Caps Word

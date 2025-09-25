@@ -41,7 +41,7 @@ layers:
   - lower
   - raise
   - {t: $$mdi:keyboard-return$$, h: raise}
-  - $$mdi:keyboard-space$$
+  - {t: $$mdi:keyboard-space$$, h: Super}
   - Caps Word
   qwertz:
   - $$mdi:keyboard-tab$$
@@ -84,7 +84,7 @@ layers:
   - lower
   - raise
   - {t: $$mdi:keyboard-return$$, h: raise}
-  - $$mdi:keyboard-space$$
+  - {t: $$mdi:keyboard-space$$, h: Super}
   - Caps Word
   lower:
   - ''

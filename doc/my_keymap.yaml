@@ -13,7 +13,7 @@ layers:
   - Z
   - ''
   - $$material:backspace$$
-  - Esc
+  - {t: Esc, h: Super}
   - {t: A, h: RIGHT ALT}
   - {t: R, h: LEFT META}
   - {t: S, h: LEFT $$mdi:apple-keyboard-shift$$}
@@ -56,7 +56,7 @@ layers:
   - O
   - P
   - $$material:backspace$$
-  - Esc
+  - {t: Esc, h: Super}
   - {t: A, h: RIGHT ALT}
   - {t: S, h: LEFT META}
   - {t: D, h: LEFT $$mdi:apple-keyboard-shift$$}
@@ -99,6 +99,7 @@ layers:
   - '?'
   - '^'
   - '§'
+  - {t: Esc, h: Super}
   - ''
   - {t: 1, h: RIGHT ALT}
   - {t: 2, h: LEFT META}
@@ -142,7 +143,7 @@ layers:
   - ']'
   - ''
   - ''
-  - ''
+  - {t: Esc, h: Super}
   - {t: '', h: RIGHT ALT}
   - {t: 4, h: LEFT META}
   - {t: 5, h: LEFT $$mdi:apple-keyboard-shift$$}
@@ -172,7 +173,7 @@ layers:
   - {t: $$mdi:keyboard-return$$, h: raise}
   - $$mdi:keyboard-space$$
   - Caps Word
-  nav_fn:
+  nav/Fn:
   - F1
   - F2
   - F3
@@ -185,7 +186,7 @@ layers:
   - F10
   - F11
   - F12
-  - ''
+  - {t: Esc, h: Super}
   - {t: '', h: RIGHT ALT}
   - {t: '', h: LEFT META}
   - {t: '', h: LEFT $$mdi:apple-keyboard-shift$$}

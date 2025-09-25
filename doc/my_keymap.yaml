@@ -100,7 +100,6 @@ layers:
   - '^'
   - '§'
   - {t: Esc, h: Super}
-  - ''
   - {t: 1, h: RIGHT ALT}
   - {t: 2, h: LEFT META}
   - {t: 3, h: LEFT $$mdi:apple-keyboard-shift$$}

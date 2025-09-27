@@ -41,7 +41,7 @@ layers:
   - lower
   - raise
   - {t: $$mdi:keyboard-return$$, h: raise}
-  - $$mdi:keyboard-space$$
+  - {t: $$mdi:keyboard-space$$, h: Super}
   - Caps Word
   qwertz:
   - $$mdi:keyboard-tab$$
@@ -84,7 +84,7 @@ layers:
   - lower
   - raise
   - {t: $$mdi:keyboard-return$$, h: raise}
-  - $$mdi:keyboard-space$$
+  - {t: $$mdi:keyboard-space$$, h: Super}
   - Caps Word
   lower:
   - ''
@@ -127,7 +127,7 @@ layers:
   - {t: lower, type: held}
   - raise
   - {t: $$mdi:keyboard-return$$, h: raise}
-  - $$mdi:keyboard-space$$
+  - {t: $$mdi:keyboard-space$$, h: Super}
   - Caps Word
   raise:
   - ''
@@ -170,7 +170,7 @@ layers:
   - lower
   - {t: raise, type: held}
   - {t: $$mdi:keyboard-return$$, h: raise}
-  - $$mdi:keyboard-space$$
+  - {t: $$mdi:keyboard-space$$, h: Super}
   - Caps Word
   nav/Fn:
   - F1
@@ -213,5 +213,5 @@ layers:
   - lower
   - raise
   - {t: $$mdi:keyboard-return$$, h: raise}
-  - $$mdi:keyboard-space$$
+  - {t: $$mdi:keyboard-space$$, h: Super}
   - Caps Word

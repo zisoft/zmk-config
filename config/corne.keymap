@@ -84,7 +84,7 @@
         &kp TAB                &kp Q             &kp W             &kp F              &kp P         &kp B        &kp J        &kp L         &kp U               &kp Z              &none             &kp BSPC
         &mt LA(LG(LCTRL)) ESC  &hml RIGHT_ALT A  &hml LEFT_META R  &hml LEFT_SHIFT S  &hml LCTRL T  &kp G        &kp M        &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr RIGHT_META I  &hmr RIGHT_ALT O  &kp DELETE
         &none                  &kp Y             &kp X             &kp C              &kp D         &kp V        &kp K        &kp H         &kp COMMA           &kp DOT            &kp SLASH         &none
-        &mo MAC_NAV_FN   &mo MAC_LOWER   &mo MAC_RAISE        &lt MAC_RAISE ENTER  &kp SPACE   &caps_word
+        &mo MAC_NAV_FN   &mo MAC_LOWER   &mo MAC_RAISE        &lt MAC_RAISE ENTER  &mt (LA(LG(LCTRL))) SPACE   &caps_word
       >;
     };
 
@@ -94,7 +94,7 @@
         &kp TAB                &kp Q             &kp W             &kp E              &kp R         &kp T        &kp Y        &kp U         &kp I               &kp O              &kp P          &kp BSPC
         &mt LA(LG(LCTRL)) ESC  &hml RIGHT_ALT A  &hml LEFT_META S  &hml LEFT_SHIFT D  &hml LCTRL F  &kp G        &kp H        &hmr RCTRL J  &hmr RIGHT_SHIFT K  &hmr RIGHT_META L  &kp RIGHT_ALT  &kp DELETE
         &none                  &kp Z             &kp X             &kp C              &kp V         &kp B        &kp N        &kp M         &kp COMMA           &kp DOT            &kp SLASH      &none
-        &mo MAC_NAV_FN   &mo MAC_LOWER   &mo MAC_RAISE        &lt MAC_RAISE ENTER  &kp SPACE   &caps_word
+        &mo MAC_NAV_FN   &mo MAC_LOWER   &mo MAC_RAISE        &lt MAC_RAISE ENTER  &mt (LA(LG(LCTRL))) SPACE   &caps_word
       >;
     };
 
@@ -103,7 +103,7 @@
         &none                  &kp LS(N1)          &kp LS(N2)         &kp RA(L)           &kp LS(N4)         &kp LS(N5)          &kp LS(N6)      &kp LS(RBKT)       &kp LS(N7)           &kp LS(MINUS)       &kp LA(LS(N6))     &kp LS(N3) 
         &mt LA(LG(LCTRL)) ESC  &hml RIGHT_ALT N1   &hml LEFT_META N2  &hml LEFT_SHIFT N3  &hml LCTRL N4      &kp N5              &kp N6          &hmr RCTRL N7      &hmr RIGHT_SHIFT N8  &hmr RIGHT_META N9  &hmr RIGHT_ALT N0  &none 
         &none                  &none               &kp LA(N)          &kp BACKSLASH       &kp LS(BACKSLASH)  &kp EQUAL           &kp RA(LS(N7))  &kp RIGHT_BRACKET  &kp LS(N0)           &kp GRAVE           &kp LS(GRAVE)      &kp RA(N7)
-        &mo MAC_NAV_FN   &mo MAC_LOWER   &mo MAC_RAISE        &lt MAC_RAISE ENTER  &kp SPACE   &caps_word
+        &mo MAC_NAV_FN   &mo MAC_LOWER   &mo MAC_RAISE        &lt MAC_RAISE ENTER  &mt (LA(LG(LCTRL))) SPACE   &caps_word
       >;
     };
 
@@ -112,7 +112,7 @@
         &none                   &none           &kp N7             &kp N8              &kp N9         &none                 &kp APOS          &kp SEMICOLON      &kp RA(N5)                &kp RA(RG(N6))           &none            &none 
         &mt LA(LG(LCTRL)) ESC   &kp RIGHT_ALT   &hml LEFT_META N4  &hml LEFT_SHIFT N5  &hml LCTRL N6  &none                 &kp LEFT_BRACKET  &hmr RCTRL MINUS   &hmr RIGHT_SHIFT LS(N8)   &hmr RIGHT_META LS(N9)   &kp RIGHT_ALT    &none 
         &none                   &kp N0          &kp N1             &kp N2  &kp N3      &none          &kp RA(E)             &none             &kp RA(N8)         &kp RA(N9)       &none   &none 
-        &mo MAC_NAV_FN   &mo MAC_LOWER   &mo MAC_RAISE        &lt MAC_RAISE ENTER  &kp SPACE   &caps_word
+        &mo MAC_NAV_FN   &mo MAC_LOWER   &mo MAC_RAISE        &lt MAC_RAISE ENTER  &mt (LA(LG(LCTRL))) SPACE   &caps_word
       >;
     };
 
@@ -121,7 +121,7 @@
         &kp F1                 &kp F2        &kp F3        &kp F4        &kp F5         &kp F6              &kp F7             &kp F8          &kp F9          &kp F10          &kp F11   &kp F12
         &mt LA(LG(LCTRL)) ESC  &none         &none         &none         &none          &to MAC_QWERTZ      &to WIN_COLEMAK    &none           &kp UP_ARROW    &none            &none     &none
         &none                  &profile_mac  &profile_win  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4        &to MAC_COLEMAK    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none     &bt BT_CLR 
-        &mo MAC_NAV_FN   &mo MAC_LOWER   &mo MAC_RAISE        &lt MAC_RAISE ENTER  &kp SPACE   &caps_word
+        &mo MAC_NAV_FN   &mo MAC_LOWER   &mo MAC_RAISE        &lt MAC_RAISE ENTER  &mt (LA(LG(LCTRL))) SPACE   &caps_word
       >;
     };
 

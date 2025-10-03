@@ -118,9 +118,9 @@
 
     mac_nav_fn { // Layer 4 (MAC_NAV_FN)
       bindings = <
-        &kp F1                 &kp F2        &kp F3        &kp F4        &kp F5         &kp F6              &kp F7             &kp F8          &kp F9          &kp F10          &kp F11   &kp F12
-        &mt LA(LG(LCTRL)) ESC  &none         &none         &none         &none          &to MAC_QWERTZ      &to WIN_COLEMAK    &none           &kp UP_ARROW    &none            &none     &none
-        &none                  &profile_mac  &profile_win  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4        &to MAC_COLEMAK    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none     &bt BT_CLR 
+        &kp F1                 &kp F2            &kp F3             &kp F4        &kp F5         &kp F6            &kp F7             &kp F8          &kp F9          &kp F10          &kp F11   &kp F12
+        &mt LA(LG(LCTRL)) ESC  &to MAC_COLEMAK   &to WIN_COLEMAK    &none         &none          &to MAC_QWERTZ    &none              &none           &kp UP_ARROW    &none            &none     &none
+        &none                  &profile_mac      &profile_win       &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4      &to MAC_COLEMAK    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none     &bt BT_CLR 
         &mo MAC_NAV_FN   &mo MAC_LOWER   &mo MAC_RAISE        &lt MAC_RAISE ENTER  &mt (LA(LG(LCTRL))) SPACE   &caps_word
       >;
     };
@@ -165,9 +165,9 @@
 
     win_nav_fn { // Layer 9 (WIN_NAV_FN)
       bindings = <
-        &kp F1   &kp F2         &kp F3         &kp F4           &kp F5         &kp F6                   &kp F7              &kp F8           &kp F9           &kp F10           &kp F11          &kp F12
-        &none    &none          &none          &none            &none          &to WIN_QWERTZ           &to WIN_COLEMAK     &none            &kp UP_ARROW     &none             &none            &none
-        &trans   &profile_mac   &profile_win   &bt BT_SEL 2     &bt BT_SEL 3   &bt BT_SEL 4             &to MAC_COLEMAK     &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW   &none            &bt BT_CLR
+        &kp F1    &kp F2            &kp F3             &kp F4    &kp F5         &kp F6           &kp F7    &kp F8           &kp F9           &kp F10           &kp F11          &kp F12
+        &kp ESC   &to MAC_COLEMAK   &to WIN_COLEMAK    &none     &none          &to WIN_QWERTZ   &none     &none            &kp UP_ARROW     &none             &none            &none
+        &trans    &profile_mac   &profile_win   &bt BT_SEL 2     &bt BT_SEL 3   &bt BT_SEL 4     &none     &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW   &none            &bt BT_CLR
         &mo WIN_NAV_FN   &mo WIN_LOWER   &mo WIN_RAISE          &lt WIN_RAISE ENTER  &kp SPACE     &caps_word
       >;
     };

@@ -186,12 +186,12 @@ layers:
   - F11
   - F12
   - {t: Esc, h: Super}
-  - {t: '', h: RIGHT ALT}
-  - {t: '', h: LEFT META}
+  - {t: $$mdi:apple$$, h: toggle}
+  - {t: $$mdi:microsoft-windows$$, h: toggle}
   - {t: '', h: LEFT $$mdi:apple-keyboard-shift$$}
   - {t: '', h: LCTRL}
   - {t: QWERTZ, h: toggle}
-  - {t: $$mdi:microsoft-windows$$, h: toggle}
+  - ''
   - {t: '', h: RCTRL}
   - {t: $$mdi:arrow-up$$, h: RIGHT $$mdi:apple-keyboard-shift$$}
   - {t: '', h: RIGHT META}
@@ -203,7 +203,7 @@ layers:
   - {t: $$mdi:bluetooth$$, h: '2'}
   - {t: $$mdi:bluetooth$$, h: '3'}
   - {t: $$mdi:bluetooth$$, h: '4'}
-  - {t: $$mdi:apple$$, h: toggle}
+  - ''
   - $$mdi:arrow-left$$ 
   - $$mdi:arrow-down$$ 
   - $$mdi:arrow-right$$ 

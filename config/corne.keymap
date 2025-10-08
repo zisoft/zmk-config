@@ -109,7 +109,7 @@
 
     mac_raise_layer { // Layer 3 (MAC_RAISE)
       bindings = <
-        &none                   &none           &kp N7             &kp N8              &kp N9         &none                 &kp APOS          &kp SEMICOLON      &kp RA(N5)                &kp RA(RG(N6))           &none            &none 
+        &none                   &none           &kp N7             &kp N8              &kp N9         &none                 &kp APOS          &kp SEMICOLON      &kp RA(N5)                &kp RA(N6)               &none            &none 
         &mt LA(LG(LCTRL)) ESC   &kp RIGHT_ALT   &hml LEFT_META N4  &hml LEFT_SHIFT N5  &hml LCTRL N6  &none                 &kp LEFT_BRACKET  &hmr RCTRL MINUS   &hmr RIGHT_SHIFT LS(N8)   &hmr RIGHT_META LS(N9)   &kp RIGHT_ALT    &none 
         &none                   &kp N0          &kp N1             &kp N2  &kp N3      &none          &kp RA(E)             &none             &kp RA(N8)         &kp RA(N9)       &none   &none 
         &mo MAC_NAV_FN   &mo MAC_LOWER   &mo MAC_RAISE        &lt MAC_RAISE ENTER  &mt (LA(LG(LCTRL))) SPACE   &caps_word

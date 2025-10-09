@@ -36,7 +36,7 @@ layers:
   - {t: ',', s: ';'}
   - {t: '.', s: ':'}
   - {t: '-', s: '_'}
-  - ''
+  - $$mdi:bluetooth$$
   - nav/Fn
   - lower
   - raise
@@ -79,7 +79,7 @@ layers:
   - {t: ',', s: ';'}
   - {t: '.', s: ':'}
   - {t: '-', s: '_'}
-  - ''
+  - $$mdi:bluetooth$$
   - nav/Fn
   - lower
   - raise
@@ -151,7 +151,7 @@ layers:
   - 'ü'
   - {t: ß, h: RCTRL}
   - {t: (, h: RIGHT $$mdi:apple-keyboard-shift$$}
-  - {t: '', h: RIGHT META}
+  - {t: ), h: RIGHT META}
   - {t: '', h: RIGHT ALT}
   - ''
   - {t: '', h: $$mdi:microsoft-windows$$}
@@ -186,11 +186,11 @@ layers:
   - F11
   - F12
   - {t: Esc, h: Super}
-  - {t: $$mdi:apple$$, h: toggle}
-  - {t: $$mdi:microsoft-windows$$, h: toggle}
+  - {t: '', h: RIGHT ALT}
+  - {t: '', h: LEFT META}
   - {t: '', h: LEFT $$mdi:apple-keyboard-shift$$}
   - {t: '', h: LCTRL}
-  - {t: QWERTZ, h: toggle}
+  - ''
   - ''
   - {t: '', h: RCTRL}
   - {t: $$mdi:arrow-up$$, h: RIGHT $$mdi:apple-keyboard-shift$$}
@@ -198,20 +198,63 @@ layers:
   - {t: '', h: RIGHT ALT}
   - ''
   - {t: '', h: $$mdi:microsoft-windows$$}
-  - {t: $$mdi:bluetooth$$, h: $$mdi:apple$$}
-  - {t: $$mdi:bluetooth$$, h: $$mdi:microsoft-windows$$}
-  - {t: $$mdi:bluetooth$$, h: '2'}
-  - {t: $$mdi:bluetooth$$, h: '3'}
-  - {t: $$mdi:bluetooth$$, h: '4'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - $$mdi:arrow-left$$ 
   - $$mdi:arrow-down$$ 
   - $$mdi:arrow-right$$ 
   - ''
-  - {t: $$mdi:bluetooth$$, h: 'CLEAR'}
+  - ''
   - {t: nav/Fn, type: held}
   - lower
   - raise
   - {t: $$mdi:keyboard-return$$, h: raise}
   - {t: $$mdi:keyboard-space$$, h: Super}
   - Caps Word
+  bluetooth:
+  - {t: $$mdi:bluetooth$$, h: $$mdi:apple$$}
+  - {t: $$mdi:bluetooth$$, h: $$mdi:microsoft-windows$$}
+  - {t: $$mdi:bluetooth$$, h: '2'}
+  - {t: $$mdi:bluetooth$$, h: '3'}
+  - {t: $$mdi:bluetooth$$, h: '4'}
+  - {t: $$mdi:bluetooth$$, h: 'CLEAR'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: $$mdi:apple$$, h: Colemak}
+  - {t: $$mdi:microsoft-windows$$, h: Colemak}
+  - ''
+  - ''
+  - {t: $$mdi:apple$$, h: QWERTZ}
+  - {t: $$mdi:microsoft-windows$$, h: QWERTZ}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: $$mdi:bluetooth$$, type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''

@@ -24,7 +24,7 @@ layers:
   - {t: E, h: RIGHT $$mdi:apple-keyboard-shift$$}
   - {t: I, h: RIGHT META}
   - {t: O, h: RIGHT ALT}
-  - Del
+  - {t: Del, h: Super}
   - {t: '', h: $$mdi:microsoft-windows$$}
   - Y
   - X
@@ -41,7 +41,7 @@ layers:
   - lower
   - raise
   - {t: $$mdi:keyboard-return$$, h: raise}
-  - {t: $$mdi:keyboard-space$$, h: Super}
+  - $$mdi:keyboard-space$$
   - Caps Word
   qwertz:
   - $$mdi:keyboard-tab$$
@@ -67,7 +67,7 @@ layers:
   - {t: K, h: RIGHT $$mdi:apple-keyboard-shift$$}
   - {t: L, h: RIGHT META}
   - {t: '', h: RIGHT ALT}
-  - Del
+  - {t: Del, h: Super}
   - {t: '', h: $$mdi:microsoft-windows$$}
   - Y
   - X
@@ -84,7 +84,7 @@ layers:
   - lower
   - raise
   - {t: $$mdi:keyboard-return$$, h: raise}
-  - {t: $$mdi:keyboard-space$$, h: Super}
+  - $$mdi:keyboard-space$$
   - Caps Word
   lower:
   - ''
@@ -110,7 +110,7 @@ layers:
   - {t: 8, h: RIGHT $$mdi:apple-keyboard-shift$$}
   - {t: 9, h: RIGHT META}
   - {t: 0, h: RIGHT ALT}
-  - ''
+  - {t: Del, h: Super}
   - {t: '', h: $$mdi:microsoft-windows$$}
   - ''
   - '~'
@@ -127,7 +127,7 @@ layers:
   - {t: lower, type: held}
   - raise
   - {t: $$mdi:keyboard-return$$, h: raise}
-  - {t: $$mdi:keyboard-space$$, h: Super}
+  - $$mdi:keyboard-space$$
   - Caps Word
   raise:
   - ''
@@ -153,7 +153,7 @@ layers:
   - {t: (, h: RIGHT $$mdi:apple-keyboard-shift$$}
   - {t: ), h: RIGHT META}
   - {t: '', h: RIGHT ALT}
-  - ''
+  - {t: Del, h: Super}
   - {t: '', h: $$mdi:microsoft-windows$$}
   - '0'
   - '1'
@@ -170,7 +170,7 @@ layers:
   - lower
   - {t: raise, type: held}
   - {t: $$mdi:keyboard-return$$, h: raise}
-  - {t: $$mdi:keyboard-space$$, h: Super}
+  - $$mdi:keyboard-space$$
   - Caps Word
   nav/Fn:
   - F1
@@ -196,7 +196,7 @@ layers:
   - {t: $$mdi:arrow-up$$, h: RIGHT $$mdi:apple-keyboard-shift$$}
   - {t: '', h: RIGHT META}
   - {t: '', h: RIGHT ALT}
-  - ''
+  - {t: Del, h: Super}
   - {t: '', h: $$mdi:microsoft-windows$$}
   - ''
   - ''
@@ -213,7 +213,7 @@ layers:
   - lower
   - raise
   - {t: $$mdi:keyboard-return$$, h: raise}
-  - {t: $$mdi:keyboard-space$$, h: Super}
+  - $$mdi:keyboard-space$$
   - Caps Word
   bluetooth:
   - {t: $$mdi:bluetooth$$, h: $$mdi:apple$$}

@@ -40,7 +40,7 @@ layers:
   - nav/Fn
   - lower
   - raise
-  - {t: $$mdi:keyboard-return$$, h: raise}
+  - $$mdi:keyboard-return$$
   - $$mdi:keyboard-space$$
   - Caps Word
   qwertz:
@@ -83,7 +83,7 @@ layers:
   - nav/Fn
   - lower
   - raise
-  - {t: $$mdi:keyboard-return$$, h: raise}
+  - $$mdi:keyboard-return$$
   - $$mdi:keyboard-space$$
   - Caps Word
   lower:
@@ -126,7 +126,7 @@ layers:
   - nav/Fn
   - {t: lower, type: held}
   - raise
-  - {t: $$mdi:keyboard-return$$, h: raise}
+  - $$mdi:keyboard-return$$
   - $$mdi:keyboard-space$$
   - Caps Word
   raise:
@@ -169,7 +169,7 @@ layers:
   - nav/Fn
   - lower
   - {t: raise, type: held}
-  - {t: $$mdi:keyboard-return$$, h: raise}
+  - $$mdi:keyboard-return$$
   - $$mdi:keyboard-space$$
   - Caps Word
   nav/Fn:
@@ -212,7 +212,7 @@ layers:
   - {t: nav/Fn, type: held}
   - lower
   - raise
-  - {t: $$mdi:keyboard-return$$, h: raise}
+  - $$mdi:keyboard-return$$
   - $$mdi:keyboard-space$$
   - Caps Word
   bluetooth:

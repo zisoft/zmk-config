@@ -263,6 +263,8 @@
 #define DE_W_BSLS RA(MINUS)
 #define DE_W_PLUS RBKT
 #define DE_W_EQL LS(N0)
+#define DE_W_AT RA(Q)
+#define DE_W_CARET GRAVE
 #define DE_W_LABK NUBS
 #define DE_W_RABK LS(NUBS)
 #define DE_W_PIPE RA(NUBS)

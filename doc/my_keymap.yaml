@@ -10,7 +10,7 @@ layers:
   - J
   - L
   - U
-  - Z
+  - Y
   - ''
   - $$material:backspace$$
   - {t: Esc, h: Super}
@@ -26,7 +26,7 @@ layers:
   - {t: O, h: RIGHT ALT}
   - {t: Del, h: Super}
   - {t: '', h: $$mdi:microsoft-windows$$}
-  - Y
+  - Z
   - X
   - C
   - D

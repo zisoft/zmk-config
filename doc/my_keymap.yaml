@@ -25,7 +25,7 @@ layers:
   - {t: I, h: RIGHT META}
   - {t: O, h: RIGHT ALT}
   - {t: Del, h: Super}
-  - {t: '', h: $$mdi:microsoft-windows$$}
+  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
@@ -36,7 +36,7 @@ layers:
   - {t: ',', s: ';'}
   - {t: '.', s: ':'}
   - {t: '-', s: '_'}
-  - $$mdi:bluetooth$$
+  - $$mdi:apple-keyboard-shift$$
   - nav/Fn
   - lower
   - raise
@@ -68,7 +68,7 @@ layers:
   - {t: L, h: RIGHT META}
   - {t: '', h: RIGHT ALT}
   - {t: Del, h: Super}
-  - {t: '', h: $$mdi:microsoft-windows$$}
+  - $$mdi:apple-keyboard-shift$$
   - Y
   - X
   - C
@@ -79,7 +79,7 @@ layers:
   - {t: ',', s: ';'}
   - {t: '.', s: ':'}
   - {t: '-', s: '_'}
-  - $$mdi:bluetooth$$
+  - $$mdi:apple-keyboard-shift$$
   - nav/Fn
   - lower
   - raise
@@ -111,7 +111,7 @@ layers:
   - {t: 9, h: RIGHT META}
   - {t: 0, h: RIGHT ALT}
   - {t: Del, h: Super}
-  - {t: '', h: $$mdi:microsoft-windows$$}
+  - ''
   - ''
   - '~'
   - '#'
@@ -154,7 +154,7 @@ layers:
   - {t: ), h: RIGHT META}
   - {t: '', h: RIGHT ALT}
   - {t: Del, h: Super}
-  - {t: '', h: $$mdi:microsoft-windows$$}
+  - ''
   - '0'
   - '1'
   - '2'
@@ -186,18 +186,18 @@ layers:
   - F11
   - F12
   - {t: Esc, h: Super}
-  - {t: '', h: RIGHT ALT}
-  - {t: '', h: LEFT META}
-  - {t: '', h: LEFT $$mdi:apple-keyboard-shift$$}
-  - {t: '', h: LCTRL}
   - ''
   - ''
-  - {t: '', h: RCTRL}
-  - {t: $$mdi:arrow-up$$, h: RIGHT $$mdi:apple-keyboard-shift$$}
-  - {t: '', h: RIGHT META}
-  - {t: '', h: RIGHT ALT}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - $$mdi:arrow-up$$
+  - ''
+  - ''
   - {t: Del, h: Super}
-  - {t: '', h: $$mdi:microsoft-windows$$}
+  - ''
   - ''
   - ''
   - ''
@@ -210,30 +210,24 @@ layers:
   - ''
   - ''
   - {t: nav/Fn, type: held}
+  - $$mdi:bluetooth$$
   - lower
-  - raise
   - $$mdi:keyboard-return$$
   - $$mdi:keyboard-space$$
   - Caps Word
   bluetooth:
-  - {t: $$mdi:bluetooth$$, h: $$mdi:apple$$}
-  - {t: $$mdi:bluetooth$$, h: $$mdi:microsoft-windows$$}
+  - {t: $$mdi:bluetooth$$, h: '1'}
   - {t: $$mdi:bluetooth$$, h: '2'}
   - {t: $$mdi:bluetooth$$, h: '3'}
   - {t: $$mdi:bluetooth$$, h: '4'}
+  - {t: $$mdi:bluetooth$$, h: '5'}
   - {t: $$mdi:bluetooth$$, h: 'CLEAR'}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - {t: $$mdi:apple$$, h: Colemak}
-  - {t: $$mdi:microsoft-windows$$, h: Colemak}
+  - ''
+  - ''
   - ''
   - ''
   - {t: $$mdi:apple$$, h: QWERTZ}
-  - {t: $$mdi:microsoft-windows$$, h: QWERTZ}
   - ''
   - ''
   - ''
@@ -251,9 +245,15 @@ layers:
   - ''
   - ''
   - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: nav/Fn, type: held}
   - {t: $$mdi:bluetooth$$, type: held}
-  - ''
-  - ''
   - ''
   - ''
   - ''

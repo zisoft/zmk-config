@@ -1,10 +1,8 @@
 # ZMK Config For My Corne Keyboard
 
-This is the ZMK config for my Corne keyboard which I use both on my Mac and on my Windows PC. Both are used with a german keyboard layout.
+This is the ZMK config for my Corne keyboard which I use on my Mac with a german keyboard layout.
 
-To get the exact same keyboard layout on macOS and Windows I have implented different layers for each OS.
-
-Additionaly I have added layers to easily switch between QWERTZ and Colemak-DH.
+Additionaly I have added layers to easily switch between Colemak-DH (my main layout) and QWERTZ.
 
 ![](doc/my_keymap.svg)
 

@@ -24,7 +24,7 @@
 
 // caps-word continue list
 &caps_word {
-  continue-list = <LSHIFT BACKSPACE DEL UNDERSCORE SLASH>;
+  continue-list = <LSHIFT SPACE BACKSPACE DEL UNDERSCORE SLASH>;
 };
 
 

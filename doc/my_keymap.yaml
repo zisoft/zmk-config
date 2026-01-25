@@ -98,7 +98,7 @@ layers:
   - '/'
   - '?'
   - '^'
-  - '§'
+  - $$material:backspace$$
   - {t: Esc, h: Super}
   - {t: 1, h: RIGHT ALT}
   - {t: 2, h: LEFT META}
@@ -112,7 +112,7 @@ layers:
   - {t: 0, h: RIGHT ALT}
   - {t: Del, h: Super}
   - ''
-  - ''
+  - '§'
   - '~'
   - '#'
   - "'"
@@ -132,21 +132,21 @@ layers:
   raise:
   - ''
   - ''
-  - '7'
-  - '8'
-  - '9'
+  - ''
+  - ''
+  - ''
   - ''
   - 'ä'
   - 'ö'
   - '['
   - ']'
   - ''
-  - ''
+  - $$material:backspace$$
   - {t: Esc, h: Super}
   - {t: '', h: RIGHT ALT}
-  - {t: 4, h: LEFT META}
-  - {t: 5, h: LEFT $$mdi:apple-keyboard-shift$$}
-  - {t: 6, h: LCTRL}
+  - {t: '', h: LEFT META}
+  - {t: '', h: LEFT $$mdi:apple-keyboard-shift$$}
+  - {t: '', h: LCTRL}
   - ''
   - 'ü'
   - {t: ß, h: RCTRL}
@@ -155,10 +155,10 @@ layers:
   - {t: '', h: RIGHT ALT}
   - {t: Del, h: Super}
   - ''
-  - '0'
-  - '1'
-  - '2'
-  - '3'
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - '€'
   - ''
@@ -210,51 +210,51 @@ layers:
   - ''
   - ''
   - {t: nav/Fn, type: held}
-  - $$mdi:bluetooth$$
+  - {t: $$mdi:bluetooth$$, h: 'Num'}
   - lower
   - $$mdi:keyboard-return$$
   - $$mdi:keyboard-space$$
   - Caps Word
-  bluetooth:
+  bluetooth/Num:
   - {t: $$mdi:bluetooth$$, h: '1'}
   - {t: $$mdi:bluetooth$$, h: '2'}
   - {t: $$mdi:bluetooth$$, h: '3'}
   - {t: $$mdi:bluetooth$$, h: '4'}
   - {t: $$mdi:bluetooth$$, h: '5'}
   - {t: $$mdi:bluetooth$$, h: 'CLEAR'}
-  - {t: $$mdi:apple$$, h: Colemak}
+  - ''
+  - '7'
+  - '8'
+  - '9'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '4'
+  - '5'
+  - '6'
+  - ''
+  - ''
+  - {t: $$mdi:apple$$, h: Co-DH}
   - ''
   - ''
   - ''
   - ''
   - {t: $$mdi:apple$$, h: QWERTZ}
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '1'
+  - '2'
+  - '3'
   - ''
   - ''
   - {t: nav/Fn, type: held}
-  - {t: $$mdi:bluetooth$$, type: held}
+  - {t: $$mdi:bluetooth$$, h: 'Num', type: held}
   - ''
   - ''
-  - ''
+  - '0'
   - ''

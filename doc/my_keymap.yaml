@@ -1,48 +1,5 @@
 layout: {zmk_keyboard: corne}
 layers:
-  colemak-dh:
-  - $$mdi:keyboard-tab$$
-  - Q
-  - W
-  - F
-  - P
-  - B
-  - J
-  - L
-  - U
-  - Y
-  - ''
-  - $$material:backspace$$
-  - {t: Esc, h: Super}
-  - {t: A, h: RIGHT ALT}
-  - {t: R, h: LEFT META}
-  - {t: S, h: LEFT $$mdi:apple-keyboard-shift$$}
-  - {t: T, h: LCTRL}
-  - G
-  - M
-  - {t: N, h: RCTRL}
-  - {t: E, h: RIGHT $$mdi:apple-keyboard-shift$$}
-  - {t: I, h: RIGHT META}
-  - {t: O, h: RIGHT ALT}
-  - {t: Del, h: Super}
-  - $$mdi:apple-keyboard-shift$$
-  - Z
-  - X
-  - C
-  - D
-  - V
-  - K
-  - H
-  - {t: ',', s: ';'}
-  - {t: '.', s: ':'}
-  - {t: '-', s: '_'}
-  - $$mdi:apple-keyboard-shift$$
-  - nav/Fn
-  - lower
-  - raise
-  - $$mdi:keyboard-return$$
-  - $$mdi:keyboard-space$$
-  - Caps Word
   qwertz:
   - $$mdi:keyboard-tab$$
   - Q
@@ -76,6 +33,49 @@ layers:
   - B
   - N
   - M
+  - {t: ',', s: ';'}
+  - {t: '.', s: ':'}
+  - {t: '-', s: '_'}
+  - $$mdi:apple-keyboard-shift$$
+  - nav/Fn
+  - lower
+  - raise
+  - $$mdi:keyboard-return$$
+  - $$mdi:keyboard-space$$
+  - Caps Word
+  colemak-dh:
+  - $$mdi:keyboard-tab$$
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ''
+  - $$material:backspace$$
+  - {t: Esc, h: Super}
+  - {t: A, h: RIGHT ALT}
+  - {t: R, h: LEFT META}
+  - {t: S, h: LEFT $$mdi:apple-keyboard-shift$$}
+  - {t: T, h: LCTRL}
+  - G
+  - M
+  - {t: N, h: RCTRL}
+  - {t: E, h: RIGHT $$mdi:apple-keyboard-shift$$}
+  - {t: I, h: RIGHT META}
+  - {t: O, h: RIGHT ALT}
+  - {t: Del, h: Super}
+  - $$mdi:apple-keyboard-shift$$
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
   - {t: ',', s: ';'}
   - {t: '.', s: ':'}
   - {t: '-', s: '_'}

@@ -30,7 +30,7 @@
  */
 
 // Row 1
-#define DE_CARET LS(LA(N6)) // ^
+#define DE_CARET LS(RA(N6)) // ^
 #define DE_CIRC GRAVE // ^ (dead)
 #define DE_1 N1       // 1
 #define DE_2 N2       // 2
@@ -143,59 +143,59 @@
  */
 
 // Row 1
-#define DE_DLQU LA(GRAVE)   // „
-#define DE_IEXL LA(N1)    // ¡
-#define DE_LDQU LA(N2)    // “
-#define DE_PILC LA(N3)    // ¶
-#define DE_CENT LA(N4)    // ¢
-#define DE_LBRC LA(N5)    // [
-#define DE_RBRC LA(N6)    // ]
-#define DE_PIPE LA(N7)    // |
-#define DE_LCBR LA(N8)    // {
-#define DE_RCBR LA(N9)    // }
-#define DE_NEQL LA(N0)    // ≠
-#define DE_IQUE LA(MINUS)   // ¿
+#define DE_DLQU RA(GRAVE)   // „
+#define DE_IEXL RA(N1)    // ¡
+#define DE_LDQU RA(N2)    // “
+#define DE_PILC RA(N3)    // ¶
+#define DE_CENT RA(N4)    // ¢
+#define DE_LBRC RA(N5)    // [
+#define DE_RBRC RA(N6)    // ]
+#define DE_PIPE RA(N7)    // |
+#define DE_LCBR RA(N8)    // {
+#define DE_RCBR RA(N9)    // }
+#define DE_NEQL RA(N0)    // ≠
+#define DE_IQUE RA(MINUS)   // ¿
 
 // Row 2
-#define DE_LDAQ LA(Q)    // «
-#define DE_NARS LA(W)    // ∑
-#define DE_EURO LA(E)    // €
-#define DE_REGD LA(R)    // ®
-#define DE_DAGG LA(T)    // †
-#define DE_OMEG LA(Z)    // Ω
-#define DE_DIAE LA(U)    // ¨ (dead)
-#define DE_FRSL LA(I)    // ⁄
-#define DE_OSTR LA(O)    // Ø
-#define DE_PI   LA(P)    // π
-#define DE_BULT LA(LBKT) // •
-#define DE_PLMN LA(RBKT) // ±
+#define DE_LDAQ RA(Q)    // «
+#define DE_NARS RA(W)    // ∑
+#define DE_EURO RA(E)    // €
+#define DE_REGD RA(R)    // ®
+#define DE_DAGG RA(T)    // †
+#define DE_OMEG RA(Z)    // Ω
+#define DE_DIAE RA(U)    // ¨ (dead)
+#define DE_FRSL RA(I)    // ⁄
+#define DE_OSTR RA(O)    // Ø
+#define DE_PI   RA(P)    // π
+#define DE_BULT RA(LBKT) // •
+#define DE_PLMN RA(RBKT) // ±
 
 // Row 3
-#define DE_ARNG LA(A)    // Å
-#define DE_SLQU LA(S)    // ‚
-#define DE_PDIF LA(D)    // ∂
-#define DE_FHK  LA(F)    // ƒ
-#define DE_COPY LA(G)    // ©
-#define DE_FORD LA(H)    // ª
-#define DE_MORD LA(J)    // º
-#define DE_INCR LA(K)    // ∆
-#define DE_AT   LA(L)    // @
-#define DE_OE   LA(SEMICOLON) // Œ
-#define DE_AE   LA(APOS) // Æ
-#define DE_LSQU LA(BSLH) // ‘
+#define DE_ARNG RA(A)    // Å
+#define DE_SLQU RA(S)    // ‚
+#define DE_PDIF RA(D)    // ∂
+#define DE_FHK  RA(F)    // ƒ
+#define DE_COPY RA(G)    // ©
+#define DE_FORD RA(H)    // ª
+#define DE_MORD RA(J)    // º
+#define DE_INCR RA(K)    // ∆
+#define DE_AT   RA(L)    // @
+#define DE_OE   RA(SEMICOLON) // Œ
+#define DE_AE   RA(APOS) // Æ
+#define DE_LSQU RA(BSLH) // ‘
 
 // Row 4
-#define DE_LTEQ LA(GRAVE) // ≤
-#define DE_YEN  LA(Y)    // ¥
-#define DE_AEQL LA(X)    // ≈
-#define DE_CCCE LA(C)    // Ç
-#define DE_SQRT LA(V)    // √
-#define DE_INTG LA(B)    // ∫
-#define DE_TILD LA(N)    // ~ (dead)
-#define DE_MICR LA(M)    // µ
-#define DE_INFN LA(COMMA) // ∞
-#define DE_ELLP LA(DOT)  // …
-#define DE_NDSH LA(MINUS) // –
+#define DE_LTEQ RA(GRAVE) // ≤
+#define DE_YEN  RA(Y)    // ¥
+#define DE_AEQL RA(X)    // ≈
+#define DE_CCCE RA(C)    // Ç
+#define DE_SQRT RA(V)    // √
+#define DE_INTG RA(B)    // ∫
+#define DE_TILD RA(N)    // ~ (dead)
+#define DE_MICR RA(M)    // µ
+#define DE_INFN RA(COMMA) // ∞
+#define DE_ELLP RA(DOT)  // …
+#define DE_NDSH RA(MINUS) // –
 
 /* Shift+Alted symbols
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬─────┐
@@ -212,48 +212,48 @@
  */
 
 // Row 1
-#define DE_NOT  LS(LA(N1))    // ¬
-#define DE_RDQU LS(LA(N2))    // ”
-#define DE_PND  LS(LA(N4))    // £
-#define DE_FI   LS(LA(N5))    // ﬁ
-#define DE_BSLS LS(LA(N7))    // (backslash)
-#define DE_STIL LS(LA(N8))    // ˜
-#define DE_MDDT LS(LA(N9))    // ·
-#define DE_MACR LS(LA(N0))    // ¯
-#define DE_DOTA LS(LA(MINUS))   // ˙
-#define DE_RNGA LS(LA(EQUAL)) // ˚
+#define DE_NOT  LS(RA(N1))    // ¬
+#define DE_RDQU LS(RA(N2))    // ”
+#define DE_PND  LS(RA(N4))    // £
+#define DE_FI   LS(RA(N5))    // ﬁ
+#define DE_BSLS LS(RA(N7))    // (backslash)
+#define DE_STIL LS(RA(N8))    // ˜
+#define DE_MDDT LS(RA(N9))    // ·
+#define DE_MACR LS(RA(N0))    // ¯
+#define DE_DOTA LS(RA(MINUS))   // ˙
+#define DE_RNGA LS(RA(EQUAL)) // ˚
 
 // Row 2
-#define DE_RDAQ LS(LA(Q))    // »
-#define DE_PERM LS(LA(E))    // ‰
-#define DE_CEDL LS(LA(R))    // ¸
-#define DE_DACU LS(LA(T))    // ˝
-#define DE_CARN LS(LA(Z))    // ˇ
-#define DE_AACU LS(LA(U))    // Á
-#define DE_UCIR LS(LA(I))    // Û
-#define DE_NARP LS(LA(P))    // ∏
-#define DE_APPL LS(LA(RPAR)) //  (Apple logo)
+#define DE_RDAQ LS(RA(Q))    // »
+#define DE_PERM LS(RA(E))    // ‰
+#define DE_CEDL LS(RA(R))    // ¸
+#define DE_DACU LS(RA(T))    // ˝
+#define DE_CARN LS(RA(Z))    // ˇ
+#define DE_AACU LS(RA(U))    // Á
+#define DE_UCIR LS(RA(I))    // Û
+#define DE_NARP LS(RA(P))    // ∏
+#define DE_APPL LS(RA(RPAR)) //  (Apple logo)
 
 // Row 3
-#define DE_IACU LS(LA(S))    // Í
-#define DE_TM   LS(LA(D))    // ™
-#define DE_IDIA LS(LA(F))    // Ï
-#define DE_IGRV LS(LA(G))    // Ì
-#define DE_OACU LS(LA(H))    // Ó
-#define DE_DLSI LS(LA(J))    // ı
-#define DE_FL   LS(LA(L))    // ﬂ
+#define DE_IACU LS(RA(S))    // Í
+#define DE_TM   LS(RA(D))    // ™
+#define DE_IDIA LS(RA(F))    // Ï
+#define DE_IGRV LS(RA(G))    // Ì
+#define DE_OACU LS(RA(H))    // Ó
+#define DE_DLSI LS(RA(J))    // ı
+#define DE_FL   LS(RA(L))    // ﬂ
 
 // Row 4
-#define DE_GTEQ LS(LA(GRAVE)) // ≥
-#define DE_DDAG LS(LA(Y))    // ‡
-#define DE_UGRV LS(LA(X))    // Ù
-#define DE_LOZN LS(LA(V))    // ◊
-#define DE_LSAQ LS(LA(B))    // ‹
-#define DE_RSAQ LS(LA(N))    // ›
-#define DE_BREV LS(LA(M))    // ˘
-#define DE_OGON LS(LA(COMMA)) // ˛
-#define DE_DIV  LS(LA(DOT))  // ÷
-#define DE_MDSH LS(LA(MINUS)) // —
+#define DE_GTEQ LS(RA(GRAVE)) // ≥
+#define DE_DDAG LS(RA(Y))    // ‡
+#define DE_UGRV LS(RA(X))    // Ù
+#define DE_LOZN LS(RA(V))    // ◊
+#define DE_LSAQ LS(RA(B))    // ‹
+#define DE_RSAQ LS(RA(N))    // ›
+#define DE_BREV LS(RA(M))    // ˘
+#define DE_OGON LS(RA(COMMA)) // ˛
+#define DE_DIV  LS(RA(DOT))  // ÷
+#define DE_MDSH LS(RA(MINUS)) // —
 
 // DE_W_XXX for Windows
 #define DE_W_TILDE RA(RBKT)
@@ -300,7 +300,7 @@
 // #define DE_EQUAL RPAR // = DE_EQL
 // #define DE_GRAVE PLUS         // ` DE_GRV
 // #define DE_HASH BSLH          // #
-// #define DE_TILDE LA(RBKT)     // ~
+// #define DE_TILDE RA(RBKT)     // ~
 // #define DE_PIPE RA(GRAVE)     // "|"
 // #define DE_AMPS CARET         // "&" DE_AMPR
 // #define DE_BSLH RA(MINUS)     // "\" DE_BSLS
